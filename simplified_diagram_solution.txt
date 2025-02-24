@@ -1,0 +1,18 @@
+[Order Placement] --> RabbitMQ (Orders Queue) --> [Order Processing Service (Python/MongoDB)] --> RabbitMQ (Confirmations Queue) --> [Notification Service (Python)]
+                                                                                                    ^
+                                                                                                    |
+                                                                                                    +--- MongoDB
+
+real-time-order-processing/
+|-- docker-compose.yml       # Docker Compose file
+|-- order-processor/         # Order Processing Service
+    |--Dockerfile          # Dockerfile for order-processor
+    |--app.py              # Main application logic (Python)
+    |--requirements.txt    # Python dependencies
+|-- notification-service/   # Notification Service
+    |--Dockerfile
+    |--app.py
+    |--requirements.txt
+|-- order-placement/        # Order Placement (Script or Web App)
+    |-- place_order.py      # Simple script (or Flask app if web form)
+    |-- requirements.txt    # Python dependencies (if needed)

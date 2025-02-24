@@ -1,0 +1,7 @@
+# .dockerignore
+Dockerfile     # Ignore Dockerfile in the root directory (if any)
+**/Dockerfile  # Ignore Dockerfile in any subdirectories (including notification_service and order_processor)
+.git           # Ignore the .git directory (and its contents)
+__pycache__    # Ignore Python bytecode cache directories
+.venv          # Ignore virtual environment directory
+*.pyc          # Ignore compiled Python files
