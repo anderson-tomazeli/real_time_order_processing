@@ -1,0 +1,21 @@
+FROM python:3.9-slim-buster
+
+RUN apt-get update && apt-get install -y iputils-ping
+
+# Create a new user and group
+RUN useradd -ms /bin/bash anderson_tomazeli
+
+# Set working directory and copy files as the new user
+USER anderson_tomazeli
+
+WORKDIR /app
+
+COPY src/utils.py /app/src/utils.py
+COPY config.ini .
+
+COPY ./notification_service/requirements.txt .
+RUN pip install --upgrade pip                                                                                                                                                                                                 
+RUN pip install --no-cache-dir -r requirements.txt                                                                                                                                                                                                                                                                                                                                                                                                          
+COPY ./notification_service/app.py .
+
+CMD ["python", "app.py"]
