@@ -12,10 +12,10 @@ WORKDIR /app
 COPY src/utils.py /app/src/utils.py
 COPY config.ini .
 
-COPY ./order_processor/requirements.txt .
+COPY ./watchdog/requirements.txt .
 RUN pip install --upgrade pip                                                                                                                                                                                                 
 RUN pip install --no-cache-dir -r requirements.txt                                                                                                                                                                                                                                                                                                                                                                                                          
 #COPY . .
-COPY ./order_processor/app.py .
+COPY ./watchdog/app.py .
 
 CMD ["python", "app.py"]

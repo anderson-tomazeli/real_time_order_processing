@@ -1,1 +1,925 @@
-
+2025-03-03 19:37:24,986 - notification-service [S] - INFO - Loading configuration for RABBITMQ: success
+2025-03-03 19:37:25,148 - notification-service [S] - INFO - [*] Waiting for confirmation messages. To exit press CTRL+C
+2025-03-03 19:37:25,462 - watchdog-service [S] - INFO - Loading configuration for RABBITMQ: success
+2025-03-03 19:37:25,752 - order-processor [S] - INFO - Loading configuration for RABBITMQ: success
+2025-03-03 19:37:25,753 - order-processor [S] - INFO - Loading configuration for MONGODB: success
+2025-03-03 19:37:25,787 - order-processor [S] - INFO - [*] Waiting for order messages. To exit press CTRL+C
+2025-03-03 19:37:52,615 - watchdog-service [S] - INFO - New file detected: ./orders/order_2db206da-8d7e-4f86-812d-4f19f3a8c817.json
+2025-03-03 19:37:52,652 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_2db206da-8d7e-4f86-812d-4f19f3a8c817.json
+2025-03-03 19:37:52,654 - order-processor [S] - INFO - Processing order: {'order_id': '2db206da-8d7e-4f86-812d-4f19f3a8c817', 'customer_id': '82bc7114-f865-4413-8133-8b98aeecce8a', 'product': 'Keyboard', 'quantity': 2, 'order_date': '2025-02-09T16:37:52.612478', 'total_amount': 1030.24}
+2025-03-03 19:37:52,663 - watchdog-service [S] - INFO - New file detected: ./orders/order_4bbe2cb5-f634-4526-bf2f-4f91e5ff06c5.json
+2025-03-03 19:37:52,675 - order-processor [S] - INFO - Order: 2db206da-8d7e-4f86-812d-4f19f3a8c817: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:37:52,677 - order-processor [S] - INFO - Order: 2db206da-8d7e-4f86-812d-4f19f3a8c817: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:37:52,678 - order-processor [S] - INFO - Removed file ./orders order_2db206da-8d7e-4f86-812d-4f19f3a8c817.json
+2025-03-03 19:37:52,679 - notification-service [S] - INFO - Notification: Order 2db206da-8d7e-4f86-812d-4f19f3a8c817 is confirmed
+2025-03-03 19:37:52,687 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_4bbe2cb5-f634-4526-bf2f-4f91e5ff06c5.json
+2025-03-03 19:37:52,690 - order-processor [S] - INFO - Processing order: {'order_id': '4bbe2cb5-f634-4526-bf2f-4f91e5ff06c5', 'customer_id': 'f8fadecb-68a1-43d5-a41a-05c23bd91fa7', 'product': 'Keyboard', 'quantity': 2, 'order_date': '2025-02-28T16:37:52.612836', 'total_amount': 1127.68}
+2025-03-03 19:37:52,694 - order-processor [S] - INFO - Order: 4bbe2cb5-f634-4526-bf2f-4f91e5ff06c5: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:37:52,698 - order-processor [S] - INFO - Order: 4bbe2cb5-f634-4526-bf2f-4f91e5ff06c5: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:37:52,698 - order-processor [S] - INFO - Removed file ./orders order_4bbe2cb5-f634-4526-bf2f-4f91e5ff06c5.json
+2025-03-03 19:37:52,697 - watchdog-service [S] - INFO - New file detected: ./orders/order_5e8586e1-84ab-45b6-8af5-9d9ce6506071.json
+2025-03-03 19:37:52,706 - notification-service [S] - INFO - Notification: Order 4bbe2cb5-f634-4526-bf2f-4f91e5ff06c5 is confirmed
+2025-03-03 19:37:52,724 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_5e8586e1-84ab-45b6-8af5-9d9ce6506071.json
+2025-03-03 19:37:52,725 - order-processor [S] - INFO - Processing order: {'order_id': '5e8586e1-84ab-45b6-8af5-9d9ce6506071', 'customer_id': 'f6baf5db-5d17-4cdf-abab-8ba82d33ec9f', 'product': 'Headphones', 'quantity': 5, 'order_date': '2025-02-08T16:37:52.613018', 'total_amount': 727.15}
+2025-03-03 19:37:52,731 - order-processor [S] - INFO - Order: 5e8586e1-84ab-45b6-8af5-9d9ce6506071: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:37:52,732 - order-processor [S] - INFO - Order: 5e8586e1-84ab-45b6-8af5-9d9ce6506071: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:37:52,736 - order-processor [S] - INFO - Removed file ./orders order_5e8586e1-84ab-45b6-8af5-9d9ce6506071.json
+2025-03-03 19:37:52,736 - notification-service [S] - INFO - Notification: Order 5e8586e1-84ab-45b6-8af5-9d9ce6506071 is confirmed
+2025-03-03 19:37:52,739 - watchdog-service [S] - INFO - New file detected: ./orders/order_bbacdd79-7adb-4e35-8bf8-216e748e13d4.json
+2025-03-03 19:37:52,758 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_bbacdd79-7adb-4e35-8bf8-216e748e13d4.json
+2025-03-03 19:37:52,760 - order-processor [S] - INFO - Processing order: {'order_id': 'bbacdd79-7adb-4e35-8bf8-216e748e13d4', 'customer_id': 'ab70ed85-b17d-4548-bea4-14464040a8f4', 'product': 'Keyboard', 'quantity': 1, 'order_date': '2025-02-17T16:37:52.613181', 'total_amount': 1911.8}
+2025-03-03 19:37:52,765 - watchdog-service [S] - INFO - New file detected: ./orders/order_7a011a8d-6396-489d-98cd-a17d6f975069.json
+2025-03-03 19:37:52,766 - order-processor [S] - INFO - Order: bbacdd79-7adb-4e35-8bf8-216e748e13d4: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:37:52,768 - order-processor [S] - INFO - Order: bbacdd79-7adb-4e35-8bf8-216e748e13d4: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:37:52,772 - notification-service [S] - INFO - Notification: Order bbacdd79-7adb-4e35-8bf8-216e748e13d4 is confirmed
+2025-03-03 19:37:52,773 - order-processor [S] - INFO - Removed file ./orders order_bbacdd79-7adb-4e35-8bf8-216e748e13d4.json
+2025-03-03 19:37:52,795 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_7a011a8d-6396-489d-98cd-a17d6f975069.json
+2025-03-03 19:37:52,797 - order-processor [S] - INFO - Processing order: {'order_id': '7a011a8d-6396-489d-98cd-a17d6f975069', 'customer_id': '0914daf5-c5eb-49f3-8542-fc5e772463fa', 'product': 'Tablet', 'quantity': 5, 'order_date': '2025-02-10T16:37:52.613333', 'total_amount': 1785.34}
+2025-03-03 19:37:52,804 - order-processor [S] - INFO - Order: 7a011a8d-6396-489d-98cd-a17d6f975069: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:37:52,807 - order-processor [S] - INFO - Order: 7a011a8d-6396-489d-98cd-a17d6f975069: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:37:52,808 - watchdog-service [S] - INFO - New file detected: ./orders/order_171dac39-4705-4e33-9e38-cdb2c8e53714.json
+2025-03-03 19:37:52,812 - order-processor [S] - INFO - Removed file ./orders order_7a011a8d-6396-489d-98cd-a17d6f975069.json
+2025-03-03 19:37:52,815 - notification-service [S] - INFO - Notification: Order 7a011a8d-6396-489d-98cd-a17d6f975069 is confirmed
+2025-03-03 19:37:52,831 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_171dac39-4705-4e33-9e38-cdb2c8e53714.json
+2025-03-03 19:37:52,833 - order-processor [S] - INFO - Processing order: {'order_id': '171dac39-4705-4e33-9e38-cdb2c8e53714', 'customer_id': 'eab1ca25-efa2-4e16-8e58-32dcb2f569b7', 'product': 'Smartphone', 'quantity': 4, 'order_date': '2025-02-17T16:37:52.618344', 'total_amount': 1395.23}
+2025-03-03 19:37:52,837 - order-processor [S] - INFO - Order: 171dac39-4705-4e33-9e38-cdb2c8e53714: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:37:52,839 - order-processor [S] - INFO - Order: 171dac39-4705-4e33-9e38-cdb2c8e53714: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:37:52,842 - order-processor [S] - INFO - Removed file ./orders order_171dac39-4705-4e33-9e38-cdb2c8e53714.json
+2025-03-03 19:37:52,848 - notification-service [S] - INFO - Notification: Order 171dac39-4705-4e33-9e38-cdb2c8e53714 is confirmed
+2025-03-03 19:37:57,508 - watchdog-service [S] - INFO - New file detected: ./orders/order_257dd916-90c9-499d-81bd-8ddedb56cd48.json
+2025-03-03 19:37:57,523 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_257dd916-90c9-499d-81bd-8ddedb56cd48.json
+2025-03-03 19:37:57,524 - order-processor [S] - INFO - Processing order: {'order_id': '257dd916-90c9-499d-81bd-8ddedb56cd48', 'customer_id': '21905f51-7b7d-4574-86fe-73c693b98548', 'product': 'Tablet', 'quantity': 5, 'order_date': '2025-02-18T16:37:57.507037', 'total_amount': 893.23}
+2025-03-03 19:37:57,530 - order-processor [S] - INFO - Order: 257dd916-90c9-499d-81bd-8ddedb56cd48: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:37:57,533 - watchdog-service [S] - INFO - New file detected: ./orders/order_b2e1d459-d4ae-4687-9041-0ba074bb9a0e.json
+2025-03-03 19:37:57,534 - order-processor [S] - INFO - Order: 257dd916-90c9-499d-81bd-8ddedb56cd48: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:37:57,536 - order-processor [S] - INFO - Removed file ./orders order_257dd916-90c9-499d-81bd-8ddedb56cd48.json
+2025-03-03 19:37:57,537 - notification-service [S] - INFO - Notification: Order 257dd916-90c9-499d-81bd-8ddedb56cd48 is confirmed
+2025-03-03 19:37:57,549 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_b2e1d459-d4ae-4687-9041-0ba074bb9a0e.json
+2025-03-03 19:37:57,551 - order-processor [S] - INFO - Processing order: {'order_id': 'b2e1d459-d4ae-4687-9041-0ba074bb9a0e', 'customer_id': '841ceb4e-fb0a-4bed-90fd-105ae230eb66', 'product': 'Headphones', 'quantity': 5, 'order_date': '2025-02-23T16:37:57.507350', 'total_amount': 527.12}
+2025-03-03 19:37:57,555 - order-processor [S] - INFO - Order: b2e1d459-d4ae-4687-9041-0ba074bb9a0e: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:37:57,559 - order-processor [S] - INFO - Order: b2e1d459-d4ae-4687-9041-0ba074bb9a0e: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:37:57,561 - order-processor [S] - INFO - Removed file ./orders order_b2e1d459-d4ae-4687-9041-0ba074bb9a0e.json
+2025-03-03 19:37:57,564 - notification-service [S] - INFO - Notification: Order b2e1d459-d4ae-4687-9041-0ba074bb9a0e is confirmed
+2025-03-03 19:37:57,562 - watchdog-service [S] - INFO - New file detected: ./orders/order_60685b2c-8a8c-4507-950f-f7c35a0863f0.json
+2025-03-03 19:37:57,583 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_60685b2c-8a8c-4507-950f-f7c35a0863f0.json
+2025-03-03 19:37:57,587 - order-processor [S] - INFO - Processing order: {'order_id': '60685b2c-8a8c-4507-950f-f7c35a0863f0', 'customer_id': 'b7977915-a0de-4e4e-8e02-d0e54c73cebc', 'product': 'Keyboard', 'quantity': 5, 'order_date': '2025-02-05T16:37:57.507546', 'total_amount': 1035.04}
+2025-03-03 19:37:57,593 - order-processor [S] - INFO - Order: 60685b2c-8a8c-4507-950f-f7c35a0863f0: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:37:57,596 - order-processor [S] - INFO - Order: 60685b2c-8a8c-4507-950f-f7c35a0863f0: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:37:57,597 - watchdog-service [S] - INFO - New file detected: ./orders/order_76f19bce-0a2a-47f9-a005-8efda64d2ea9.json
+2025-03-03 19:37:57,600 - order-processor [S] - INFO - Removed file ./orders order_60685b2c-8a8c-4507-950f-f7c35a0863f0.json
+2025-03-03 19:37:57,601 - notification-service [S] - INFO - Notification: Order 60685b2c-8a8c-4507-950f-f7c35a0863f0 is confirmed
+2025-03-03 19:37:57,614 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_76f19bce-0a2a-47f9-a005-8efda64d2ea9.json
+2025-03-03 19:37:57,615 - order-processor [S] - INFO - Processing order: {'order_id': '76f19bce-0a2a-47f9-a005-8efda64d2ea9', 'customer_id': 'd89b8165-9b19-4edf-9e44-a17efd4f0947', 'product': 'Smartphone', 'quantity': 2, 'order_date': '2025-02-15T16:37:57.507711', 'total_amount': 200.39}
+2025-03-03 19:37:57,617 - order-processor [S] - INFO - Order: 76f19bce-0a2a-47f9-a005-8efda64d2ea9: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:37:57,619 - order-processor [S] - INFO - Order: 76f19bce-0a2a-47f9-a005-8efda64d2ea9: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:37:57,619 - watchdog-service [S] - INFO - New file detected: ./orders/order_53e319ee-33a5-496d-888f-bfa965ff1ae1.json
+2025-03-03 19:37:57,621 - order-processor [S] - INFO - Removed file ./orders order_76f19bce-0a2a-47f9-a005-8efda64d2ea9.json
+2025-03-03 19:37:57,623 - notification-service [S] - INFO - Notification: Order 76f19bce-0a2a-47f9-a005-8efda64d2ea9 is confirmed
+2025-03-03 19:37:57,645 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_53e319ee-33a5-496d-888f-bfa965ff1ae1.json
+2025-03-03 19:37:57,648 - order-processor [S] - INFO - Processing order: {'order_id': '53e319ee-33a5-496d-888f-bfa965ff1ae1', 'customer_id': 'f623a150-f59f-4298-acf2-cacc38a92a29', 'product': None, 'quantity': 2, 'order_date': '2025-03-02T16:37:57.507993', 'total_amount': 821.1}
+2025-03-03 19:37:57,652 - order-processor [S] - ERROR - Validation: Order: 53e319ee-33a5-496d-888f-bfa965ff1ae1: Product is required - Sent to the fails queue
+2025-03-03 19:38:00,682 - watchdog-service [S] - INFO - New file detected: ./orders/order_9300a8af-d904-461d-8eab-1cf466db343f.json
+2025-03-03 19:38:00,696 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_9300a8af-d904-461d-8eab-1cf466db343f.json
+2025-03-03 19:38:00,700 - order-processor [S] - INFO - Processing order: {'order_id': '9300a8af-d904-461d-8eab-1cf466db343f', 'customer_id': 'dc65653a-cde7-4f9b-819c-2d65365cbe7a', 'product': 'Tablet', 'quantity': 1, 'order_date': '2025-02-26T16:38:00.680590', 'total_amount': 1884.31}
+2025-03-03 19:38:00,707 - order-processor [S] - INFO - Order: 9300a8af-d904-461d-8eab-1cf466db343f: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:38:00,709 - order-processor [S] - INFO - Order: 9300a8af-d904-461d-8eab-1cf466db343f: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:38:00,711 - watchdog-service [S] - INFO - New file detected: ./orders/order_8dca3002-dc7a-47b6-a4d7-0354bfee71e3.json
+2025-03-03 19:38:00,712 - order-processor [S] - INFO - Removed file ./orders order_9300a8af-d904-461d-8eab-1cf466db343f.json
+2025-03-03 19:38:00,716 - notification-service [S] - INFO - Notification: Order 9300a8af-d904-461d-8eab-1cf466db343f is confirmed
+2025-03-03 19:38:00,731 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_8dca3002-dc7a-47b6-a4d7-0354bfee71e3.json
+2025-03-03 19:38:00,733 - order-processor [S] - INFO - Processing order: {'order_id': '8dca3002-dc7a-47b6-a4d7-0354bfee71e3', 'customer_id': '1e6b44f7-2fa7-4ce9-8fcb-5b30ace88af1', 'product': 'Tablet', 'quantity': 2, 'order_date': '2025-02-17T16:38:00.680894', 'total_amount': 1100.21}
+2025-03-03 19:38:00,736 - order-processor [S] - INFO - Order: 8dca3002-dc7a-47b6-a4d7-0354bfee71e3: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:38:00,739 - watchdog-service [S] - INFO - New file detected: ./orders/order_23dc6130-c481-4d74-b423-2560c58bb6e2.json
+2025-03-03 19:38:00,740 - order-processor [S] - INFO - Order: 8dca3002-dc7a-47b6-a4d7-0354bfee71e3: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:38:00,742 - order-processor [S] - INFO - Removed file ./orders order_8dca3002-dc7a-47b6-a4d7-0354bfee71e3.json
+2025-03-03 19:38:00,744 - notification-service [S] - INFO - Notification: Order 8dca3002-dc7a-47b6-a4d7-0354bfee71e3 is confirmed
+2025-03-03 19:38:00,766 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_23dc6130-c481-4d74-b423-2560c58bb6e2.json
+2025-03-03 19:38:00,768 - order-processor [S] - INFO - Processing order: {'order_id': '23dc6130-c481-4d74-b423-2560c58bb6e2', 'customer_id': 'dbaf09df-ed10-4c03-be31-fe070bb921b1', 'product': 'Tablet', 'quantity': 2, 'order_date': '2025-02-16T16:38:00.681076', 'total_amount': 523.41}
+2025-03-03 19:38:00,773 - order-processor [S] - INFO - Order: 23dc6130-c481-4d74-b423-2560c58bb6e2: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:38:00,776 - order-processor [S] - INFO - Order: 23dc6130-c481-4d74-b423-2560c58bb6e2: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:38:00,779 - order-processor [S] - INFO - Removed file ./orders order_23dc6130-c481-4d74-b423-2560c58bb6e2.json
+2025-03-03 19:38:00,780 - notification-service [S] - INFO - Notification: Order 23dc6130-c481-4d74-b423-2560c58bb6e2 is confirmed
+2025-03-03 19:38:00,782 - watchdog-service [S] - INFO - New file detected: ./orders/order_2386230f-e807-4c48-aef6-e64812f43450.json
+2025-03-03 19:38:00,803 - order-processor [S] - INFO - Processing order: {'order_id': '2386230f-e807-4c48-aef6-e64812f43450', 'customer_id': 'd7d70e6b-1b0e-477d-8c14-da9bb594f68c', 'product': 'Tablet', 'quantity': 5, 'order_date': '2025-02-07T16:38:00.681237', 'total_amount': 1374.93}
+2025-03-03 19:38:00,798 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_2386230f-e807-4c48-aef6-e64812f43450.json
+2025-03-03 19:38:00,809 - order-processor [S] - INFO - Order: 2386230f-e807-4c48-aef6-e64812f43450: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:38:00,813 - order-processor [S] - INFO - Order: 2386230f-e807-4c48-aef6-e64812f43450: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:38:00,817 - order-processor [S] - INFO - Removed file ./orders order_2386230f-e807-4c48-aef6-e64812f43450.json
+2025-03-03 19:38:00,818 - notification-service [S] - INFO - Notification: Order 2386230f-e807-4c48-aef6-e64812f43450 is confirmed
+2025-03-03 19:38:00,822 - watchdog-service [S] - INFO - New file detected: ./orders/order_de8ac4b1-df01-4ce4-9ac0-ae2e0e53ff24.json
+2025-03-03 19:38:00,838 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_de8ac4b1-df01-4ce4-9ac0-ae2e0e53ff24.json
+2025-03-03 19:38:00,839 - order-processor [S] - INFO - Processing order: {'order_id': 'de8ac4b1-df01-4ce4-9ac0-ae2e0e53ff24', 'customer_id': '35cce8cb-c1d5-41d7-870b-9f5c597a77a3', 'product': 'Keyboard', 'quantity': 3, 'order_date': '2025-02-02T16:38:00.681404', 'total_amount': 819.07}
+2025-03-03 19:38:00,842 - order-processor [S] - INFO - Order: de8ac4b1-df01-4ce4-9ac0-ae2e0e53ff24: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:38:00,843 - order-processor [S] - INFO - Order: de8ac4b1-df01-4ce4-9ac0-ae2e0e53ff24: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:38:00,846 - order-processor [S] - INFO - Removed file ./orders order_de8ac4b1-df01-4ce4-9ac0-ae2e0e53ff24.json
+2025-03-03 19:38:00,848 - notification-service [S] - INFO - Notification: Order de8ac4b1-df01-4ce4-9ac0-ae2e0e53ff24 is confirmed
+2025-03-03 19:38:04,705 - watchdog-service [S] - INFO - New file detected: ./orders/order_c397fc20-53d9-45e1-8030-f35c7f6ce63a.json
+2025-03-03 19:38:04,722 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_c397fc20-53d9-45e1-8030-f35c7f6ce63a.json
+2025-03-03 19:38:04,723 - order-processor [S] - INFO - Processing order: {'order_id': 'c397fc20-53d9-45e1-8030-f35c7f6ce63a', 'customer_id': '796bd078-b47f-49c4-a291-403c98ad6bd4', 'product': 'Laptop', 'quantity': 1, 'order_date': '2025-03-03T16:38:04.702824', 'total_amount': 738.89}
+2025-03-03 19:38:04,730 - order-processor [S] - INFO - Order: c397fc20-53d9-45e1-8030-f35c7f6ce63a: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:38:04,734 - order-processor [S] - INFO - Order: c397fc20-53d9-45e1-8030-f35c7f6ce63a: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:38:04,736 - watchdog-service [S] - INFO - New file detected: ./orders/order_a56a5318-cb51-469d-998a-e17e37115bcb.json
+2025-03-03 19:38:04,737 - order-processor [S] - INFO - Removed file ./orders order_c397fc20-53d9-45e1-8030-f35c7f6ce63a.json
+2025-03-03 19:38:04,738 - notification-service [S] - INFO - Notification: Order c397fc20-53d9-45e1-8030-f35c7f6ce63a is confirmed
+2025-03-03 19:38:04,754 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_a56a5318-cb51-469d-998a-e17e37115bcb.json
+2025-03-03 19:38:04,755 - order-processor [S] - INFO - Processing order: {'order_id': 'a56a5318-cb51-469d-998a-e17e37115bcb', 'customer_id': '2b34f29d-8891-4d5b-b444-8f68b4049032', 'product': 'Tablet', 'quantity': 2, 'order_date': '2025-03-01T16:38:04.704184', 'total_amount': 1358.71}
+2025-03-03 19:38:04,758 - order-processor [S] - INFO - Order: a56a5318-cb51-469d-998a-e17e37115bcb: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:38:04,760 - order-processor [S] - INFO - Order: a56a5318-cb51-469d-998a-e17e37115bcb: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:38:04,761 - notification-service [S] - INFO - Notification: Order a56a5318-cb51-469d-998a-e17e37115bcb is confirmed
+2025-03-03 19:38:04,762 - order-processor [S] - INFO - Removed file ./orders order_a56a5318-cb51-469d-998a-e17e37115bcb.json
+2025-03-03 19:38:04,764 - watchdog-service [S] - INFO - New file detected: ./orders/order_4a16cb57-ca34-44f9-9dd5-90fa0c7082ac.json
+2025-03-03 19:38:04,784 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_4a16cb57-ca34-44f9-9dd5-90fa0c7082ac.json
+2025-03-03 19:38:04,786 - order-processor [S] - INFO - Processing order: {'order_id': '4a16cb57-ca34-44f9-9dd5-90fa0c7082ac', 'customer_id': 'cf51e07f-3d03-4d26-8841-e21047b2b509', 'product': 'Smartphone', 'quantity': 3, 'order_date': '2025-02-04T16:38:04.704425', 'total_amount': 601.25}
+2025-03-03 19:38:04,791 - order-processor [S] - INFO - Order: 4a16cb57-ca34-44f9-9dd5-90fa0c7082ac: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:38:04,793 - watchdog-service [S] - INFO - New file detected: ./orders/order_59d5ed15-8c0d-4b88-bf5b-b27b0d56bce4.json
+2025-03-03 19:38:04,794 - order-processor [S] - INFO - Order: 4a16cb57-ca34-44f9-9dd5-90fa0c7082ac: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:38:04,796 - order-processor [S] - INFO - Removed file ./orders order_4a16cb57-ca34-44f9-9dd5-90fa0c7082ac.json
+2025-03-03 19:38:04,799 - notification-service [S] - INFO - Notification: Order 4a16cb57-ca34-44f9-9dd5-90fa0c7082ac is confirmed
+2025-03-03 19:38:04,810 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_59d5ed15-8c0d-4b88-bf5b-b27b0d56bce4.json
+2025-03-03 19:38:04,812 - order-processor [S] - INFO - Processing order: {'order_id': '59d5ed15-8c0d-4b88-bf5b-b27b0d56bce4', 'customer_id': '03be6b23-c912-4b3f-97fc-2389835c85a8', 'product': 'Keyboard', 'quantity': 4, 'order_date': '2025-02-05T16:38:04.704618', 'total_amount': 116.76}
+2025-03-03 19:38:04,815 - order-processor [S] - INFO - Order: 59d5ed15-8c0d-4b88-bf5b-b27b0d56bce4: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:38:04,818 - watchdog-service [S] - INFO - New file detected: ./orders/order_daefbfbd-6d66-4862-9ad0-4ecac7d7cc88.json
+2025-03-03 19:38:04,819 - order-processor [S] - INFO - Order: 59d5ed15-8c0d-4b88-bf5b-b27b0d56bce4: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:38:04,822 - notification-service [S] - INFO - Notification: Order 59d5ed15-8c0d-4b88-bf5b-b27b0d56bce4 is confirmed
+2025-03-03 19:38:04,823 - order-processor [S] - INFO - Removed file ./orders order_59d5ed15-8c0d-4b88-bf5b-b27b0d56bce4.json
+2025-03-03 19:38:04,845 - order-processor [S] - INFO - Processing order: {'order_id': 'daefbfbd-6d66-4862-9ad0-4ecac7d7cc88', 'customer_id': 'f076acb9-b018-4d7f-b518-6923595100e8', 'product': 'Keyboard', 'quantity': 5, 'order_date': '2025-02-03T16:38:04.704782', 'total_amount': 296.89}
+2025-03-03 19:38:04,843 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_daefbfbd-6d66-4862-9ad0-4ecac7d7cc88.json
+2025-03-03 19:38:04,850 - order-processor [S] - INFO - Order: daefbfbd-6d66-4862-9ad0-4ecac7d7cc88: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:38:04,851 - order-processor [S] - INFO - Order: daefbfbd-6d66-4862-9ad0-4ecac7d7cc88: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:38:04,854 - notification-service [S] - INFO - Notification: Order daefbfbd-6d66-4862-9ad0-4ecac7d7cc88 is confirmed
+2025-03-03 19:38:04,856 - order-processor [S] - INFO - Removed file ./orders order_daefbfbd-6d66-4862-9ad0-4ecac7d7cc88.json
+2025-03-03 19:38:06,649 - watchdog-service [S] - INFO - New file detected: ./orders/order_26c5409a-2149-43f1-82c2-56a4caa42053.json
+2025-03-03 19:38:06,667 - order-processor [S] - INFO - Processing order: {'order_id': '26c5409a-2149-43f1-82c2-56a4caa42053', 'customer_id': '6047bc39-6fd7-453c-b3b3-9361498ae691', 'product': 'Headphones', 'quantity': 5, 'order_date': '2025-02-06T16:38:06.647899', 'total_amount': 1952.94}
+2025-03-03 19:38:06,666 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_26c5409a-2149-43f1-82c2-56a4caa42053.json
+2025-03-03 19:38:06,674 - order-processor [S] - INFO - Order: 26c5409a-2149-43f1-82c2-56a4caa42053: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:38:06,675 - order-processor [S] - INFO - Order: 26c5409a-2149-43f1-82c2-56a4caa42053: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:38:06,678 - order-processor [S] - INFO - Removed file ./orders order_26c5409a-2149-43f1-82c2-56a4caa42053.json
+2025-03-03 19:38:06,681 - notification-service [S] - INFO - Notification: Order 26c5409a-2149-43f1-82c2-56a4caa42053 is confirmed
+2025-03-03 19:38:06,677 - watchdog-service [S] - INFO - New file detected: ./orders/order_dc0b2e95-567f-4d97-a3dd-b2e5c5c0b265.json
+2025-03-03 19:38:06,695 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_dc0b2e95-567f-4d97-a3dd-b2e5c5c0b265.json
+2025-03-03 19:38:06,696 - order-processor [S] - INFO - Processing order: {'order_id': 'dc0b2e95-567f-4d97-a3dd-b2e5c5c0b265', 'customer_id': '7ea5574c-b06d-4025-a527-5c0f1777c87d', 'product': 'Tablet', 'quantity': 4, 'order_date': '2025-03-02T16:38:06.648310', 'total_amount': 1480.19}
+2025-03-03 19:38:06,699 - order-processor [S] - INFO - Order: dc0b2e95-567f-4d97-a3dd-b2e5c5c0b265: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:38:06,701 - watchdog-service [S] - INFO - New file detected: ./orders/order_46903d57-99af-4364-8956-82174f5939ec.json
+2025-03-03 19:38:06,702 - order-processor [S] - INFO - Order: dc0b2e95-567f-4d97-a3dd-b2e5c5c0b265: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:38:06,703 - order-processor [S] - INFO - Removed file ./orders order_dc0b2e95-567f-4d97-a3dd-b2e5c5c0b265.json
+2025-03-03 19:38:06,706 - notification-service [S] - INFO - Notification: Order dc0b2e95-567f-4d97-a3dd-b2e5c5c0b265 is confirmed
+2025-03-03 19:38:06,719 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_46903d57-99af-4364-8956-82174f5939ec.json
+2025-03-03 19:38:06,721 - order-processor [S] - INFO - Processing order: {'order_id': '46903d57-99af-4364-8956-82174f5939ec', 'customer_id': '7484517e-cd93-4810-bf35-7f223b35cf91', 'product': 'Smartphone', 'quantity': 4, 'order_date': '2025-03-01T16:38:06.651053', 'total_amount': 252.76}
+2025-03-03 19:38:06,725 - order-processor [S] - INFO - Order: 46903d57-99af-4364-8956-82174f5939ec: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:38:06,728 - order-processor [S] - INFO - Order: 46903d57-99af-4364-8956-82174f5939ec: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:38:06,732 - order-processor [S] - INFO - Removed file ./orders order_46903d57-99af-4364-8956-82174f5939ec.json
+2025-03-03 19:38:06,735 - notification-service [S] - INFO - Notification: Order 46903d57-99af-4364-8956-82174f5939ec is confirmed
+2025-03-03 19:38:11,512 - watchdog-service [S] - INFO - New file detected: ./orders/order_442fff2e-8873-4d58-8c9f-f4513488f712.json
+2025-03-03 19:38:11,527 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_442fff2e-8873-4d58-8c9f-f4513488f712.json
+2025-03-03 19:38:11,528 - order-processor [S] - INFO - Processing order: {'order_id': '442fff2e-8873-4d58-8c9f-f4513488f712', 'customer_id': 'a3198e9e-189b-4b07-a90a-1b5d8e875488', 'product': None, 'quantity': 4, 'order_date': '2025-02-01T16:38:11.510124', 'total_amount': 291.61}
+2025-03-03 19:38:11,530 - order-processor [S] - ERROR - Validation: Order: 442fff2e-8873-4d58-8c9f-f4513488f712: Product is required - Sent to the fails queue
+2025-03-03 19:38:11,540 - watchdog-service [S] - INFO - New file detected: ./orders/order_65e81cfb-d8af-411b-a540-07612fa28d99.json
+2025-03-03 19:38:11,552 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_65e81cfb-d8af-411b-a540-07612fa28d99.json
+2025-03-03 19:38:11,554 - order-processor [S] - INFO - Processing order: {'order_id': '65e81cfb-d8af-411b-a540-07612fa28d99', 'customer_id': '22d8bf45-9c2f-43b5-9f15-21a979dc307c', 'product': 'Tablet', 'quantity': 4, 'order_date': '2025-03-03T16:38:11.510566', 'total_amount': 670.9}
+2025-03-03 19:38:11,557 - order-processor [S] - INFO - Order: 65e81cfb-d8af-411b-a540-07612fa28d99: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:38:11,558 - order-processor [S] - INFO - Order: 65e81cfb-d8af-411b-a540-07612fa28d99: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:38:11,559 - watchdog-service [S] - INFO - New file detected: ./orders/order_eafc6163-b793-443a-8297-0beb01e59bea.json
+2025-03-03 19:38:11,560 - order-processor [S] - INFO - Removed file ./orders order_65e81cfb-d8af-411b-a540-07612fa28d99.json
+2025-03-03 19:38:11,564 - notification-service [S] - INFO - Notification: Order 65e81cfb-d8af-411b-a540-07612fa28d99 is confirmed
+2025-03-03 19:38:11,576 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_eafc6163-b793-443a-8297-0beb01e59bea.json
+2025-03-03 19:38:11,578 - order-processor [S] - INFO - Processing order: {'order_id': 'eafc6163-b793-443a-8297-0beb01e59bea', 'customer_id': '98f40db1-b9ba-4c84-8737-51c63c632d0c', 'product': 'Headphones', 'quantity': 3, 'order_date': '2025-02-04T16:38:11.510812', 'total_amount': 1718.36}
+2025-03-03 19:38:11,582 - order-processor [S] - INFO - Order: eafc6163-b793-443a-8297-0beb01e59bea: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:38:11,587 - order-processor [S] - INFO - Order: eafc6163-b793-443a-8297-0beb01e59bea: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:38:11,591 - order-processor [S] - INFO - Removed file ./orders order_eafc6163-b793-443a-8297-0beb01e59bea.json
+2025-03-03 19:38:11,592 - notification-service [S] - INFO - Notification: Order eafc6163-b793-443a-8297-0beb01e59bea is confirmed
+2025-03-03 19:38:15,967 - watchdog-service [S] - INFO - New file detected: ./orders/order_e4ef275f-ee60-4d4f-b475-d1d63421a4c3.json
+2025-03-03 19:38:15,979 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_e4ef275f-ee60-4d4f-b475-d1d63421a4c3.json
+2025-03-03 19:38:15,981 - order-processor [S] - INFO - Processing order: {'order_id': 'e4ef275f-ee60-4d4f-b475-d1d63421a4c3', 'customer_id': 'e6161c12-f3d9-4fb4-915f-d63e9681fe0b', 'product': 'Keyboard', 'quantity': 3, 'order_date': '2025-02-21T16:38:15.965689', 'total_amount': 1646.97}
+2025-03-03 19:38:15,985 - order-processor [S] - INFO - Order: e4ef275f-ee60-4d4f-b475-d1d63421a4c3: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:38:15,990 - order-processor [S] - INFO - Order: e4ef275f-ee60-4d4f-b475-d1d63421a4c3: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:38:15,992 - order-processor [S] - INFO - Removed file ./orders order_e4ef275f-ee60-4d4f-b475-d1d63421a4c3.json
+2025-03-03 19:38:15,995 - notification-service [S] - INFO - Notification: Order e4ef275f-ee60-4d4f-b475-d1d63421a4c3 is confirmed
+2025-03-03 19:38:15,991 - watchdog-service [S] - INFO - New file detected: ./orders/order_11692096-5d46-49a6-8287-e725aa366ae2.json
+2025-03-03 19:38:16,032 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_11692096-5d46-49a6-8287-e725aa366ae2.json
+2025-03-03 19:38:16,038 - order-processor [S] - INFO - Processing order: {'order_id': '11692096-5d46-49a6-8287-e725aa366ae2', 'customer_id': 'd8e77584-7022-423c-9815-9652b2007024', 'product': 'Keyboard', 'quantity': 4, 'order_date': '2025-02-28T16:38:15.965984', 'total_amount': 964.94}
+2025-03-03 19:38:16,041 - order-processor [S] - INFO - Order: 11692096-5d46-49a6-8287-e725aa366ae2: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:38:16,046 - order-processor [S] - INFO - Order: 11692096-5d46-49a6-8287-e725aa366ae2: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:38:16,047 - watchdog-service [S] - INFO - New file detected: ./orders/order_825665cd-1f9f-4689-8539-ac073cb68c83.json
+2025-03-03 19:38:16,049 - order-processor [S] - INFO - Removed file ./orders order_11692096-5d46-49a6-8287-e725aa366ae2.json
+2025-03-03 19:38:16,051 - notification-service [S] - INFO - Notification: Order 11692096-5d46-49a6-8287-e725aa366ae2 is confirmed
+2025-03-03 19:38:16,061 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_825665cd-1f9f-4689-8539-ac073cb68c83.json
+2025-03-03 19:38:16,064 - order-processor [S] - INFO - Processing order: {'order_id': '825665cd-1f9f-4689-8539-ac073cb68c83', 'customer_id': '8bb6eb30-88b3-4291-832a-912e8c9dc8ab', 'product': 'Smartphone', 'quantity': 2, 'order_date': '2025-02-08T16:38:15.966159', 'total_amount': 999.26}
+2025-03-03 19:38:16,067 - order-processor [S] - INFO - Order: 825665cd-1f9f-4689-8539-ac073cb68c83: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:38:16,067 - watchdog-service [S] - INFO - New file detected: ./orders/order_c3d6ce3a-d33d-4565-a8b6-8ac00590ff42.json
+2025-03-03 19:38:16,071 - order-processor [S] - INFO - Order: 825665cd-1f9f-4689-8539-ac073cb68c83: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:38:16,074 - notification-service [S] - INFO - Notification: Order 825665cd-1f9f-4689-8539-ac073cb68c83 is confirmed
+2025-03-03 19:38:16,075 - order-processor [S] - INFO - Removed file ./orders order_825665cd-1f9f-4689-8539-ac073cb68c83.json
+2025-03-03 19:38:16,093 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_c3d6ce3a-d33d-4565-a8b6-8ac00590ff42.json
+2025-03-03 19:38:16,096 - order-processor [S] - INFO - Processing order: {'order_id': 'c3d6ce3a-d33d-4565-a8b6-8ac00590ff42', 'customer_id': '98308a68-80dd-4b45-b615-5650f3697e83', 'product': 'Tablet', 'quantity': 4, 'order_date': '2025-03-01T16:38:15.966313', 'total_amount': 457.36}
+2025-03-03 19:38:16,101 - order-processor [S] - INFO - Order: c3d6ce3a-d33d-4565-a8b6-8ac00590ff42: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:38:16,105 - order-processor [S] - INFO - Order: c3d6ce3a-d33d-4565-a8b6-8ac00590ff42: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:38:16,106 - order-processor [S] - INFO - Removed file ./orders order_c3d6ce3a-d33d-4565-a8b6-8ac00590ff42.json
+2025-03-03 19:38:16,110 - notification-service [S] - INFO - Notification: Order c3d6ce3a-d33d-4565-a8b6-8ac00590ff42 is confirmed
+2025-03-03 19:38:17,763 - watchdog-service [S] - INFO - New file detected: ./orders/order_21de08b3-c693-4ee9-9f9d-e13374ec9beb.json
+2025-03-03 19:38:17,774 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_21de08b3-c693-4ee9-9f9d-e13374ec9beb.json
+2025-03-03 19:38:17,777 - order-processor [S] - INFO - Processing order: {'order_id': '21de08b3-c693-4ee9-9f9d-e13374ec9beb', 'customer_id': '1276a3d5-fb8d-4330-bcd6-054add864677', 'product': None, 'quantity': 5, 'order_date': '2025-02-01T16:38:17.761691', 'total_amount': 1846.29}
+2025-03-03 19:38:17,784 - order-processor [S] - ERROR - Validation: Order: 21de08b3-c693-4ee9-9f9d-e13374ec9beb: Product is required - Sent to the fails queue
+2025-03-03 19:38:17,788 - watchdog-service [S] - INFO - New file detected: ./orders/order_68df7761-793e-42a0-a87c-c379a1850725.json
+2025-03-03 19:38:17,801 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_68df7761-793e-42a0-a87c-c379a1850725.json
+2025-03-03 19:38:17,802 - order-processor [S] - INFO - Processing order: {'order_id': '68df7761-793e-42a0-a87c-c379a1850725', 'customer_id': '1a442ad9-82a9-41b0-9b02-944091014ef9', 'product': None, 'quantity': 4, 'order_date': '2025-02-25T16:38:17.762066', 'total_amount': 1410.08}
+2025-03-03 19:38:17,805 - order-processor [S] - ERROR - Validation: Order: 68df7761-793e-42a0-a87c-c379a1850725: Product is required - Sent to the fails queue
+2025-03-03 19:44:40,173 - notification-service [S] - INFO - Loading configuration for RABBITMQ: success
+2025-03-03 19:44:40,277 - notification-service [S] - INFO - [*] Waiting for confirmation messages. To exit press CTRL+C
+2025-03-03 19:44:40,730 - watchdog-service [S] - INFO - Loading configuration for RABBITMQ: success
+2025-03-03 19:44:40,960 - order-processor [S] - INFO - Loading configuration for RABBITMQ: success
+2025-03-03 19:44:40,960 - order-processor [S] - INFO - Loading configuration for MONGODB: success
+2025-03-03 19:44:40,994 - order-processor [S] - INFO - [*] Waiting for order messages. To exit press CTRL+C
+2025-03-03 19:45:02,502 - watchdog-service [S] - INFO - New file detected: ./orders/order_14239715-98d8-4ed5-96c7-4461c008899c.json
+2025-03-03 19:45:02,535 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_14239715-98d8-4ed5-96c7-4461c008899c.json
+2025-03-03 19:45:02,535 - order-processor [S] - INFO - Processing order: {'order_id': '14239715-98d8-4ed5-96c7-4461c008899c', 'customer_id': '9e22f889-c5f0-41ee-b88f-56e7d84ef9d3', 'product': 'Tablet', 'quantity': 2, 'order_date': '2025-02-26T16:45:02.501371', 'total_amount': 574.58}
+2025-03-03 19:45:02,548 - order-processor [S] - INFO - Order: 14239715-98d8-4ed5-96c7-4461c008899c: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:45:02,549 - order-processor [S] - INFO - Order: 14239715-98d8-4ed5-96c7-4461c008899c: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:45:02,550 - order-processor [S] - INFO - Removed file ./orders order_14239715-98d8-4ed5-96c7-4461c008899c.json
+2025-03-03 19:45:02,551 - notification-service [S] - INFO - Notification: Order 14239715-98d8-4ed5-96c7-4461c008899c is confirmed
+2025-03-03 19:45:07,338 - watchdog-service [S] - INFO - New file detected: ./orders/order_84b13bc1-077a-46f2-ae3f-7e27f929f3be.json
+2025-03-03 19:45:07,365 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_84b13bc1-077a-46f2-ae3f-7e27f929f3be.json
+2025-03-03 19:45:07,371 - order-processor [S] - INFO - Processing order: {'order_id': '84b13bc1-077a-46f2-ae3f-7e27f929f3be', 'customer_id': '1e55b8a9-f3b0-496c-816d-97be777ccc0e', 'product': 'Keyboard', 'quantity': 4, 'order_date': '2025-02-25T16:45:07.332365', 'total_amount': 1372.47}
+2025-03-03 19:45:07,375 - watchdog-service [S] - INFO - New file detected: ./orders/order_73ce26bc-6a84-4ba5-930a-941d893d5372.json
+2025-03-03 19:45:07,376 - order-processor [S] - INFO - Order: 84b13bc1-077a-46f2-ae3f-7e27f929f3be: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:45:07,380 - order-processor [S] - INFO - Order: 84b13bc1-077a-46f2-ae3f-7e27f929f3be: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:45:07,381 - order-processor [S] - INFO - Removed file ./orders order_84b13bc1-077a-46f2-ae3f-7e27f929f3be.json
+2025-03-03 19:45:07,387 - notification-service [S] - INFO - Notification: Order 84b13bc1-077a-46f2-ae3f-7e27f929f3be is confirmed
+2025-03-03 19:45:07,401 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_73ce26bc-6a84-4ba5-930a-941d893d5372.json
+2025-03-03 19:45:07,404 - order-processor [S] - INFO - Processing order: {'order_id': '73ce26bc-6a84-4ba5-930a-941d893d5372', 'customer_id': '0a11d10a-35b6-42fa-a44c-aa1c337c8666', 'product': 'Headphones', 'quantity': 4, 'order_date': '2025-03-03T16:45:07.332839', 'total_amount': 1598.65}
+2025-03-03 19:45:07,410 - order-processor [S] - INFO - Order: 73ce26bc-6a84-4ba5-930a-941d893d5372: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:45:07,415 - order-processor [S] - INFO - Order: 73ce26bc-6a84-4ba5-930a-941d893d5372: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:45:07,413 - watchdog-service [S] - INFO - New file detected: ./orders/order_ab5aeb2a-59a9-4cae-b2ba-66678365ee7d.json
+2025-03-03 19:45:07,421 - order-processor [S] - INFO - Removed file ./orders order_73ce26bc-6a84-4ba5-930a-941d893d5372.json
+2025-03-03 19:45:07,428 - notification-service [S] - INFO - Notification: Order 73ce26bc-6a84-4ba5-930a-941d893d5372 is confirmed
+2025-03-03 19:45:07,452 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_ab5aeb2a-59a9-4cae-b2ba-66678365ee7d.json
+2025-03-03 19:45:07,457 - order-processor [S] - INFO - Processing order: {'order_id': 'ab5aeb2a-59a9-4cae-b2ba-66678365ee7d', 'customer_id': '6eff6d48-4753-48c4-a52f-67fb362a2dac', 'product': 'Headphones', 'quantity': 4, 'order_date': '2025-02-06T16:45:07.333090', 'total_amount': 1384.94}
+2025-03-03 19:45:07,460 - order-processor [S] - INFO - Order: ab5aeb2a-59a9-4cae-b2ba-66678365ee7d: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:45:07,463 - order-processor [S] - INFO - Order: ab5aeb2a-59a9-4cae-b2ba-66678365ee7d: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:45:07,467 - order-processor [S] - INFO - Removed file ./orders order_ab5aeb2a-59a9-4cae-b2ba-66678365ee7d.json
+2025-03-03 19:45:07,471 - notification-service [S] - INFO - Notification: Order ab5aeb2a-59a9-4cae-b2ba-66678365ee7d is confirmed
+2025-03-03 19:45:07,473 - watchdog-service [S] - INFO - New file detected: ./orders/order_e7436c78-7a0b-4479-b8b9-f54d3391f56f.json
+2025-03-03 19:45:07,503 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_e7436c78-7a0b-4479-b8b9-f54d3391f56f.json
+2025-03-03 19:45:07,505 - order-processor [S] - INFO - Processing order: {'order_id': 'e7436c78-7a0b-4479-b8b9-f54d3391f56f', 'customer_id': 'e2d4b342-f013-44c6-9f34-8843c13944c2', 'product': 'Headphones', 'quantity': 5, 'order_date': '2025-02-03T16:45:07.333313', 'total_amount': 695.92}
+2025-03-03 19:45:07,510 - order-processor [S] - INFO - Order: e7436c78-7a0b-4479-b8b9-f54d3391f56f: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:45:07,514 - order-processor [S] - INFO - Order: e7436c78-7a0b-4479-b8b9-f54d3391f56f: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:45:07,515 - watchdog-service [S] - INFO - New file detected: ./orders/order_370b69d7-44a5-4a5e-a3e2-f6804f751c46.json
+2025-03-03 19:45:07,515 - order-processor [S] - INFO - Removed file ./orders order_e7436c78-7a0b-4479-b8b9-f54d3391f56f.json
+2025-03-03 19:45:07,517 - notification-service [S] - INFO - Notification: Order e7436c78-7a0b-4479-b8b9-f54d3391f56f is confirmed
+2025-03-03 19:45:07,547 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_370b69d7-44a5-4a5e-a3e2-f6804f751c46.json
+2025-03-03 19:45:07,548 - order-processor [S] - INFO - Processing order: {'order_id': '370b69d7-44a5-4a5e-a3e2-f6804f751c46', 'customer_id': 'a7c76017-7e32-437c-acb9-825e20c04e6e', 'product': 'Keyboard', 'quantity': 5, 'order_date': '2025-02-10T16:45:07.337038', 'total_amount': 1278.18}
+2025-03-03 19:45:07,554 - order-processor [S] - INFO - Order: 370b69d7-44a5-4a5e-a3e2-f6804f751c46: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:45:07,557 - order-processor [S] - INFO - Order: 370b69d7-44a5-4a5e-a3e2-f6804f751c46: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:45:07,559 - order-processor [S] - INFO - Removed file ./orders order_370b69d7-44a5-4a5e-a3e2-f6804f751c46.json
+2025-03-03 19:45:07,562 - notification-service [S] - INFO - Notification: Order 370b69d7-44a5-4a5e-a3e2-f6804f751c46 is confirmed
+2025-03-03 19:45:07,562 - watchdog-service [S] - INFO - New file detected: ./orders/order_0e48b39d-ba92-4a21-b5bc-dfe6a627e58b.json
+2025-03-03 19:45:07,587 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_0e48b39d-ba92-4a21-b5bc-dfe6a627e58b.json
+2025-03-03 19:45:07,591 - order-processor [S] - INFO - Processing order: {'order_id': '0e48b39d-ba92-4a21-b5bc-dfe6a627e58b', 'customer_id': 'fa263f4a-b4a8-41c9-8a8a-28a0f36adfe8', 'product': 'Smartphone', 'quantity': 4, 'order_date': '2025-02-24T16:45:07.337295', 'total_amount': 90.75}
+2025-03-03 19:45:07,598 - order-processor [S] - INFO - Order: 0e48b39d-ba92-4a21-b5bc-dfe6a627e58b: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:45:07,600 - order-processor [S] - INFO - Order: 0e48b39d-ba92-4a21-b5bc-dfe6a627e58b: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:45:07,603 - notification-service [S] - INFO - Notification: Order 0e48b39d-ba92-4a21-b5bc-dfe6a627e58b is confirmed
+2025-03-03 19:45:07,605 - order-processor [S] - INFO - Removed file ./orders order_0e48b39d-ba92-4a21-b5bc-dfe6a627e58b.json
+2025-03-03 19:45:08,591 - watchdog-service [S] - INFO - New file detected: ./orders/order_205f5bfb-02ad-433c-af92-ba19bc3e829b.json
+2025-03-03 19:45:08,604 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_205f5bfb-02ad-433c-af92-ba19bc3e829b.json
+2025-03-03 19:45:08,606 - order-processor [S] - INFO - Processing order: {'order_id': '205f5bfb-02ad-433c-af92-ba19bc3e829b', 'customer_id': 'dde57819-198f-4c12-82f4-2545fa2bb721', 'product': 'Tablet', 'quantity': 5, 'order_date': '2025-03-03T16:45:08.590676', 'total_amount': 662.39}
+2025-03-03 19:45:08,609 - order-processor [S] - INFO - Order: 205f5bfb-02ad-433c-af92-ba19bc3e829b: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:45:08,615 - order-processor [S] - INFO - Order: 205f5bfb-02ad-433c-af92-ba19bc3e829b: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:45:08,617 - order-processor [S] - INFO - Removed file ./orders order_205f5bfb-02ad-433c-af92-ba19bc3e829b.json
+2025-03-03 19:45:08,617 - notification-service [S] - INFO - Notification: Order 205f5bfb-02ad-433c-af92-ba19bc3e829b is confirmed
+2025-03-03 19:45:13,212 - watchdog-service [S] - INFO - New file detected: ./orders/order_e5713b7b-f2f2-4f32-a799-dec43eb00efc.json
+2025-03-03 19:45:13,225 - order-processor [S] - INFO - Processing order: {'order_id': 'e5713b7b-f2f2-4f32-a799-dec43eb00efc', 'customer_id': '718cbade-e4f2-4f65-aa8b-6cb54f4202fa', 'product': 'Keyboard', 'quantity': 2, 'order_date': '2025-02-04T16:45:13.210561', 'total_amount': 1126.31}
+2025-03-03 19:45:13,225 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_e5713b7b-f2f2-4f32-a799-dec43eb00efc.json
+2025-03-03 19:45:13,229 - order-processor [S] - INFO - Order: e5713b7b-f2f2-4f32-a799-dec43eb00efc: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:45:13,232 - order-processor [S] - INFO - Order: e5713b7b-f2f2-4f32-a799-dec43eb00efc: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:45:13,235 - order-processor [S] - INFO - Removed file ./orders order_e5713b7b-f2f2-4f32-a799-dec43eb00efc.json
+2025-03-03 19:45:13,236 - notification-service [S] - INFO - Notification: Order e5713b7b-f2f2-4f32-a799-dec43eb00efc is confirmed
+2025-03-03 19:45:13,238 - watchdog-service [S] - INFO - New file detected: ./orders/order_5b3942bc-4a14-4aec-864f-8435f6f8ccd1.json
+2025-03-03 19:45:13,250 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_5b3942bc-4a14-4aec-864f-8435f6f8ccd1.json
+2025-03-03 19:45:13,251 - order-processor [S] - INFO - Processing order: {'order_id': '5b3942bc-4a14-4aec-864f-8435f6f8ccd1', 'customer_id': 'c86da8e0-7585-443d-9cc0-09105ac5e940', 'product': 'Smartphone', 'quantity': 3, 'order_date': '2025-02-05T16:45:13.210873', 'total_amount': 1696.62}
+2025-03-03 19:45:13,255 - order-processor [S] - INFO - Order: 5b3942bc-4a14-4aec-864f-8435f6f8ccd1: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:45:13,255 - watchdog-service [S] - INFO - New file detected: ./orders/order_c17ce29c-0569-450a-b08c-8e7be164bc36.json
+2025-03-03 19:45:13,258 - order-processor [S] - INFO - Order: 5b3942bc-4a14-4aec-864f-8435f6f8ccd1: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:45:13,260 - order-processor [S] - INFO - Removed file ./orders order_5b3942bc-4a14-4aec-864f-8435f6f8ccd1.json
+2025-03-03 19:45:13,262 - notification-service [S] - INFO - Notification: Order 5b3942bc-4a14-4aec-864f-8435f6f8ccd1 is confirmed
+2025-03-03 19:45:13,273 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_c17ce29c-0569-450a-b08c-8e7be164bc36.json
+2025-03-03 19:45:13,276 - order-processor [S] - INFO - Processing order: {'order_id': 'c17ce29c-0569-450a-b08c-8e7be164bc36', 'customer_id': '6155edf8-f5aa-4d7e-b174-397214480543', 'product': 'Keyboard', 'quantity': 3, 'order_date': '2025-02-15T16:45:13.211149', 'total_amount': 1509.75}
+2025-03-03 19:45:13,281 - order-processor [S] - INFO - Order: c17ce29c-0569-450a-b08c-8e7be164bc36: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:45:13,285 - order-processor [S] - INFO - Order: c17ce29c-0569-450a-b08c-8e7be164bc36: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:45:13,289 - order-processor [S] - INFO - Removed file ./orders order_c17ce29c-0569-450a-b08c-8e7be164bc36.json
+2025-03-03 19:45:13,292 - notification-service [S] - INFO - Notification: Order c17ce29c-0569-450a-b08c-8e7be164bc36 is confirmed
+2025-03-03 19:45:16,074 - watchdog-service [S] - INFO - New file detected: ./orders/order_102dd168-ce26-4033-9740-a09b94c4e338.json
+2025-03-03 19:45:16,087 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_102dd168-ce26-4033-9740-a09b94c4e338.json
+2025-03-03 19:45:16,089 - order-processor [S] - INFO - Processing order: {'order_id': '102dd168-ce26-4033-9740-a09b94c4e338', 'customer_id': 'acae4714-6ff0-4bc0-9460-7d3bed81a7bf', 'product': 'Tablet', 'quantity': 2, 'order_date': '2025-02-27T16:45:16.072492', 'total_amount': 150.45}
+2025-03-03 19:45:16,096 - order-processor [S] - INFO - Order: 102dd168-ce26-4033-9740-a09b94c4e338: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:45:16,097 - order-processor [S] - INFO - Order: 102dd168-ce26-4033-9740-a09b94c4e338: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:45:16,100 - order-processor [S] - INFO - Removed file ./orders order_102dd168-ce26-4033-9740-a09b94c4e338.json
+2025-03-03 19:45:16,102 - notification-service [S] - INFO - Notification: Order 102dd168-ce26-4033-9740-a09b94c4e338 is confirmed
+2025-03-03 19:45:16,104 - watchdog-service [S] - INFO - New file detected: ./orders/order_634c497c-e57a-40ba-9b27-851ed8f27904.json
+2025-03-03 19:45:16,119 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_634c497c-e57a-40ba-9b27-851ed8f27904.json
+2025-03-03 19:45:16,121 - order-processor [S] - INFO - Processing order: {'order_id': '634c497c-e57a-40ba-9b27-851ed8f27904', 'customer_id': 'f3d70246-7108-4be6-8748-abab8a6ad2a8', 'product': 'Headphones', 'quantity': 2, 'order_date': '2025-03-02T16:45:16.072777', 'total_amount': 705.57}
+2025-03-03 19:45:16,124 - order-processor [S] - INFO - Order: 634c497c-e57a-40ba-9b27-851ed8f27904: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:45:16,128 - watchdog-service [S] - INFO - New file detected: ./orders/order_1b00b9fd-a145-4e91-a2b4-d66e05c55e89.json
+2025-03-03 19:45:16,130 - notification-service [S] - INFO - Notification: Order 634c497c-e57a-40ba-9b27-851ed8f27904 is confirmed
+2025-03-03 19:45:16,128 - order-processor [S] - INFO - Order: 634c497c-e57a-40ba-9b27-851ed8f27904: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:45:16,132 - order-processor [S] - INFO - Removed file ./orders order_634c497c-e57a-40ba-9b27-851ed8f27904.json
+2025-03-03 19:45:16,147 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_1b00b9fd-a145-4e91-a2b4-d66e05c55e89.json
+2025-03-03 19:45:16,151 - order-processor [S] - INFO - Processing order: {'order_id': '1b00b9fd-a145-4e91-a2b4-d66e05c55e89', 'customer_id': '0cc928fd-c888-4153-b305-8abe1ce4c532', 'product': None, 'quantity': 4, 'order_date': '2025-02-02T16:45:16.072939', 'total_amount': 254.08}
+2025-03-03 19:45:16,155 - order-processor [S] - ERROR - Validation: Order: 1b00b9fd-a145-4e91-a2b4-d66e05c55e89: Product is required - Sent to the fails queue
+2025-03-03 19:45:16,159 - watchdog-service [S] - INFO - New file detected: ./orders/order_ee0ccb81-ee77-459b-8100-2c4b5cfa8b5d.json
+2025-03-03 19:45:16,172 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_ee0ccb81-ee77-459b-8100-2c4b5cfa8b5d.json
+2025-03-03 19:45:16,174 - order-processor [S] - INFO - Processing order: {'order_id': 'ee0ccb81-ee77-459b-8100-2c4b5cfa8b5d', 'customer_id': 'e99a1b2c-6ce7-4eb5-ab9f-a10febb4e2ec', 'product': None, 'quantity': 3, 'order_date': '2025-03-02T16:45:16.073196', 'total_amount': 85.26}
+2025-03-03 19:45:16,175 - order-processor [S] - ERROR - Validation: Order: ee0ccb81-ee77-459b-8100-2c4b5cfa8b5d: Product is required - Sent to the fails queue
+2025-03-03 19:45:16,176 - watchdog-service [S] - INFO - New file detected: ./orders/order_86db6fd2-ce6e-4968-b82f-9042b83f5985.json
+2025-03-03 19:45:16,190 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_86db6fd2-ce6e-4968-b82f-9042b83f5985.json
+2025-03-03 19:45:16,191 - order-processor [S] - INFO - Processing order: {'order_id': '86db6fd2-ce6e-4968-b82f-9042b83f5985', 'customer_id': '26d8fc51-39a4-49ca-871e-ddfa68022900', 'product': None, 'quantity': 3, 'order_date': '2025-02-06T16:45:16.073430', 'total_amount': 1581.55}
+2025-03-03 19:45:16,194 - order-processor [S] - ERROR - Validation: Order: 86db6fd2-ce6e-4968-b82f-9042b83f5985: Product is required - Sent to the fails queue
+2025-03-03 19:45:16,200 - watchdog-service [S] - INFO - New file detected: ./orders/order_bc3ffdf8-a714-44f3-8f2d-33c1c4b2e0f1.json
+2025-03-03 19:45:16,223 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_bc3ffdf8-a714-44f3-8f2d-33c1c4b2e0f1.json
+2025-03-03 19:45:16,224 - order-processor [S] - INFO - Processing order: {'order_id': 'bc3ffdf8-a714-44f3-8f2d-33c1c4b2e0f1', 'customer_id': '6d4deed7-b144-4be8-9a86-b1c95cc2cae2', 'product': None, 'quantity': 4, 'order_date': '2025-02-18T16:45:16.077744', 'total_amount': 1510.53}
+2025-03-03 19:45:16,227 - order-processor [S] - ERROR - Validation: Order: bc3ffdf8-a714-44f3-8f2d-33c1c4b2e0f1: Product is required - Sent to the fails queue
+2025-03-03 19:45:19,906 - watchdog-service [S] - INFO - New file detected: ./orders/order_7189e0d6-3ce6-4d93-8a24-692344395cd1.json
+2025-03-03 19:45:19,917 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_7189e0d6-3ce6-4d93-8a24-692344395cd1.json
+2025-03-03 19:45:19,919 - order-processor [S] - INFO - Processing order: {'order_id': '7189e0d6-3ce6-4d93-8a24-692344395cd1', 'customer_id': 'e0dc794c-fd48-4f59-a343-5b862c5674bb', 'product': 'Headphones', 'quantity': 2, 'order_date': '2025-02-14T16:45:19.905266', 'total_amount': 96.65}
+2025-03-03 19:45:19,929 - order-processor [S] - INFO - Order: 7189e0d6-3ce6-4d93-8a24-692344395cd1: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:45:19,931 - order-processor [S] - INFO - Order: 7189e0d6-3ce6-4d93-8a24-692344395cd1: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:45:19,933 - notification-service [S] - INFO - Notification: Order 7189e0d6-3ce6-4d93-8a24-692344395cd1 is confirmed
+2025-03-03 19:45:19,942 - order-processor [S] - INFO - Removed file ./orders order_7189e0d6-3ce6-4d93-8a24-692344395cd1.json
+2025-03-03 19:45:21,045 - watchdog-service [S] - INFO - New file detected: ./orders/order_269926a4-4316-4c81-9690-c77702b6e242.json
+2025-03-03 19:45:21,062 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_269926a4-4316-4c81-9690-c77702b6e242.json
+2025-03-03 19:45:21,066 - order-processor [S] - INFO - Processing order: {'order_id': '269926a4-4316-4c81-9690-c77702b6e242', 'customer_id': '215c3eff-acd7-41f4-a141-d1d6cf9953d6', 'product': 'Smartphone', 'quantity': 1, 'order_date': '2025-02-13T16:45:21.044316', 'total_amount': 1281.54}
+2025-03-03 19:45:21,071 - order-processor [S] - INFO - Order: 269926a4-4316-4c81-9690-c77702b6e242: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:45:21,074 - order-processor [S] - INFO - Order: 269926a4-4316-4c81-9690-c77702b6e242: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:45:21,075 - watchdog-service [S] - INFO - New file detected: ./orders/order_ca126299-663a-447d-bbcd-3f98a353bf92.json
+2025-03-03 19:45:21,077 - order-processor [S] - INFO - Removed file ./orders order_269926a4-4316-4c81-9690-c77702b6e242.json
+2025-03-03 19:45:21,080 - notification-service [S] - INFO - Notification: Order 269926a4-4316-4c81-9690-c77702b6e242 is confirmed
+2025-03-03 19:45:21,096 - order-processor [S] - INFO - Processing order: {'order_id': 'ca126299-663a-447d-bbcd-3f98a353bf92', 'customer_id': '3d4c06a7-6ff1-44dd-9a19-b230f249fb9f', 'product': 'Keyboard', 'quantity': 5, 'order_date': '2025-03-02T16:45:21.047079', 'total_amount': 976.09}
+2025-03-03 19:45:21,095 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_ca126299-663a-447d-bbcd-3f98a353bf92.json
+2025-03-03 19:45:21,100 - order-processor [S] - INFO - Order: ca126299-663a-447d-bbcd-3f98a353bf92: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:45:21,101 - order-processor [S] - INFO - Order: ca126299-663a-447d-bbcd-3f98a353bf92: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:45:21,104 - order-processor [S] - INFO - Removed file ./orders order_ca126299-663a-447d-bbcd-3f98a353bf92.json
+2025-03-03 19:45:21,108 - notification-service [S] - INFO - Notification: Order ca126299-663a-447d-bbcd-3f98a353bf92 is confirmed
+2025-03-03 19:45:22,316 - watchdog-service [S] - INFO - New file detected: ./orders/order_b8c26fc1-3a56-4e4d-af45-e78a6064ae6e.json
+2025-03-03 19:45:22,333 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_b8c26fc1-3a56-4e4d-af45-e78a6064ae6e.json
+2025-03-03 19:45:22,336 - order-processor [S] - INFO - Processing order: {'order_id': 'b8c26fc1-3a56-4e4d-af45-e78a6064ae6e', 'customer_id': 'a6975941-3304-4099-840c-25b5473a75b7', 'product': 'Laptop', 'quantity': 2, 'order_date': '2025-03-02T16:45:22.314961', 'total_amount': 1143.62}
+2025-03-03 19:45:22,344 - order-processor [S] - INFO - Order: b8c26fc1-3a56-4e4d-af45-e78a6064ae6e: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:45:22,347 - watchdog-service [S] - INFO - New file detected: ./orders/order_1242b549-793c-45ce-8220-0a873afa3244.json
+2025-03-03 19:45:22,348 - order-processor [S] - INFO - Order: b8c26fc1-3a56-4e4d-af45-e78a6064ae6e: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:45:22,351 - order-processor [S] - INFO - Removed file ./orders order_b8c26fc1-3a56-4e4d-af45-e78a6064ae6e.json
+2025-03-03 19:45:22,349 - notification-service [S] - INFO - Notification: Order b8c26fc1-3a56-4e4d-af45-e78a6064ae6e is confirmed
+2025-03-03 19:45:22,370 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_1242b549-793c-45ce-8220-0a873afa3244.json
+2025-03-03 19:45:22,370 - order-processor [S] - INFO - Processing order: {'order_id': '1242b549-793c-45ce-8220-0a873afa3244', 'customer_id': 'b82033a4-6ec6-490e-9b96-46998eafa0b7', 'product': 'Laptop', 'quantity': 1, 'order_date': '2025-02-01T16:45:22.315344', 'total_amount': 1710.8}
+2025-03-03 19:45:22,375 - order-processor [S] - INFO - Order: 1242b549-793c-45ce-8220-0a873afa3244: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:45:22,378 - order-processor [S] - INFO - Order: 1242b549-793c-45ce-8220-0a873afa3244: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:45:22,379 - watchdog-service [S] - INFO - New file detected: ./orders/order_5c04a875-aa9c-4d33-afc2-3617fa1bc810.json
+2025-03-03 19:45:22,380 - order-processor [S] - INFO - Removed file ./orders order_1242b549-793c-45ce-8220-0a873afa3244.json
+2025-03-03 19:45:22,385 - notification-service [S] - INFO - Notification: Order 1242b549-793c-45ce-8220-0a873afa3244 is confirmed
+2025-03-03 19:45:22,418 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_5c04a875-aa9c-4d33-afc2-3617fa1bc810.json
+2025-03-03 19:45:22,421 - order-processor [S] - INFO - Processing order: {'order_id': '5c04a875-aa9c-4d33-afc2-3617fa1bc810', 'customer_id': '30243764-aa36-4f14-96b8-45569402b9d1', 'product': 'Keyboard', 'quantity': 2, 'order_date': '2025-02-25T16:45:22.317864', 'total_amount': 97.33}
+2025-03-03 19:45:22,426 - order-processor [S] - INFO - Order: 5c04a875-aa9c-4d33-afc2-3617fa1bc810: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:45:22,428 - watchdog-service [S] - INFO - New file detected: ./orders/order_169e25ab-2070-4eb0-9915-9d9909f9d33c.json
+2025-03-03 19:45:22,430 - order-processor [S] - INFO - Order: 5c04a875-aa9c-4d33-afc2-3617fa1bc810: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:45:22,431 - order-processor [S] - INFO - Removed file ./orders order_5c04a875-aa9c-4d33-afc2-3617fa1bc810.json
+2025-03-03 19:45:22,433 - notification-service [S] - INFO - Notification: Order 5c04a875-aa9c-4d33-afc2-3617fa1bc810 is confirmed
+2025-03-03 19:45:22,448 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_169e25ab-2070-4eb0-9915-9d9909f9d33c.json
+2025-03-03 19:45:22,450 - order-processor [S] - INFO - Processing order: {'order_id': '169e25ab-2070-4eb0-9915-9d9909f9d33c', 'customer_id': '940cfabf-f600-4ac1-bed9-4cdd070edb06', 'product': 'Tablet', 'quantity': 4, 'order_date': '2025-02-06T16:45:22.318318', 'total_amount': 556.14}
+2025-03-03 19:45:22,455 - order-processor [S] - INFO - Order: 169e25ab-2070-4eb0-9915-9d9909f9d33c: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:45:22,460 - order-processor [S] - INFO - Order: 169e25ab-2070-4eb0-9915-9d9909f9d33c: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:45:22,462 - notification-service [S] - INFO - Notification: Order 169e25ab-2070-4eb0-9915-9d9909f9d33c is confirmed
+2025-03-03 19:45:22,466 - order-processor [S] - INFO - Removed file ./orders order_169e25ab-2070-4eb0-9915-9d9909f9d33c.json
+2025-03-03 19:45:26,061 - watchdog-service [S] - INFO - New file detected: ./orders/order_1184d2eb-de36-4575-93b1-ea025881baf9.json
+2025-03-03 19:45:26,072 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_1184d2eb-de36-4575-93b1-ea025881baf9.json
+2025-03-03 19:45:26,074 - order-processor [S] - INFO - Processing order: {'order_id': '1184d2eb-de36-4575-93b1-ea025881baf9', 'customer_id': 'e0e83cb6-6ad5-4574-99bc-ca77877110e1', 'product': 'Laptop', 'quantity': 1, 'order_date': '2025-02-11T16:45:26.060526', 'total_amount': 1932.34}
+2025-03-03 19:45:26,076 - order-processor [S] - INFO - Order: 1184d2eb-de36-4575-93b1-ea025881baf9: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:45:26,078 - order-processor [S] - INFO - Order: 1184d2eb-de36-4575-93b1-ea025881baf9: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:45:26,081 - order-processor [S] - INFO - Removed file ./orders order_1184d2eb-de36-4575-93b1-ea025881baf9.json
+2025-03-03 19:45:26,084 - notification-service [S] - INFO - Notification: Order 1184d2eb-de36-4575-93b1-ea025881baf9 is confirmed
+2025-03-03 19:45:30,934 - watchdog-service [S] - INFO - New file detected: ./orders/order_0f447e37-276d-44c1-ac8c-542d0f5a489b.json
+2025-03-03 19:45:30,948 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_0f447e37-276d-44c1-ac8c-542d0f5a489b.json
+2025-03-03 19:45:30,949 - order-processor [S] - INFO - Processing order: {'order_id': '0f447e37-276d-44c1-ac8c-542d0f5a489b', 'customer_id': '9d6995b2-457b-4fac-a819-4204db9c3a00', 'product': 'Laptop', 'quantity': 1, 'order_date': '2025-02-25T16:45:30.932641', 'total_amount': 383.91}
+2025-03-03 19:45:30,955 - order-processor [S] - INFO - Order: 0f447e37-276d-44c1-ac8c-542d0f5a489b: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:45:30,959 - order-processor [S] - INFO - Order: 0f447e37-276d-44c1-ac8c-542d0f5a489b: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:45:30,960 - watchdog-service [S] - INFO - New file detected: ./orders/order_333fb826-2527-4cb1-92a6-63087458c281.json
+2025-03-03 19:45:30,961 - order-processor [S] - INFO - Removed file ./orders order_0f447e37-276d-44c1-ac8c-542d0f5a489b.json
+2025-03-03 19:45:30,964 - notification-service [S] - INFO - Notification: Order 0f447e37-276d-44c1-ac8c-542d0f5a489b is confirmed
+2025-03-03 19:45:30,987 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_333fb826-2527-4cb1-92a6-63087458c281.json
+2025-03-03 19:45:30,988 - order-processor [S] - INFO - Processing order: {'order_id': '333fb826-2527-4cb1-92a6-63087458c281', 'customer_id': 'c3fd41e8-06f3-4717-afd9-c2f0e05a51cf', 'product': 'Keyboard', 'quantity': 3, 'order_date': '2025-02-25T16:45:30.932931', 'total_amount': 1791.23}
+2025-03-03 19:45:30,993 - order-processor [S] - INFO - Order: 333fb826-2527-4cb1-92a6-63087458c281: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:45:30,998 - watchdog-service [S] - INFO - New file detected: ./orders/order_f1c541e3-682d-4874-9884-46968467aad6.json
+2025-03-03 19:45:30,998 - order-processor [S] - INFO - Order: 333fb826-2527-4cb1-92a6-63087458c281: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:45:31,001 - order-processor [S] - INFO - Removed file ./orders order_333fb826-2527-4cb1-92a6-63087458c281.json
+2025-03-03 19:45:31,006 - notification-service [S] - INFO - Notification: Order 333fb826-2527-4cb1-92a6-63087458c281 is confirmed
+2025-03-03 19:45:31,021 - order-processor [S] - INFO - Processing order: {'order_id': 'f1c541e3-682d-4874-9884-46968467aad6', 'customer_id': 'c3d7b11f-5210-4d30-9ab1-61f3beabe233', 'product': 'Keyboard', 'quantity': 1, 'order_date': '2025-02-23T16:45:30.933096', 'total_amount': 233.46}
+2025-03-03 19:45:31,021 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_f1c541e3-682d-4874-9884-46968467aad6.json
+2025-03-03 19:45:31,024 - order-processor [S] - INFO - Order: f1c541e3-682d-4874-9884-46968467aad6: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:45:31,025 - order-processor [S] - INFO - Order: f1c541e3-682d-4874-9884-46968467aad6: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:45:31,027 - order-processor [S] - INFO - Removed file ./orders order_f1c541e3-682d-4874-9884-46968467aad6.json
+2025-03-03 19:45:31,028 - notification-service [S] - INFO - Notification: Order f1c541e3-682d-4874-9884-46968467aad6 is confirmed
+2025-03-03 19:45:31,030 - watchdog-service [S] - INFO - New file detected: ./orders/order_fe1158c4-28d7-42e6-990a-5deaa8fecefd.json
+2025-03-03 19:45:31,055 - order-processor [S] - INFO - Processing order: {'order_id': 'fe1158c4-28d7-42e6-990a-5deaa8fecefd', 'customer_id': '5ddff3c1-b7bc-4384-8b39-6f458011d378', 'product': None, 'quantity': 3, 'order_date': '2025-02-07T16:45:30.933283', 'total_amount': 207.2}
+2025-03-03 19:45:31,052 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_fe1158c4-28d7-42e6-990a-5deaa8fecefd.json
+2025-03-03 19:45:31,058 - order-processor [S] - ERROR - Validation: Order: fe1158c4-28d7-42e6-990a-5deaa8fecefd: Product is required - Sent to the fails queue
+2025-03-03 19:45:31,068 - watchdog-service [S] - INFO - New file detected: ./orders/order_aec606b8-fa08-44e6-a80d-73c65ea6026e.json
+2025-03-03 19:45:31,085 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_aec606b8-fa08-44e6-a80d-73c65ea6026e.json
+2025-03-03 19:45:31,087 - order-processor [S] - INFO - Processing order: {'order_id': 'aec606b8-fa08-44e6-a80d-73c65ea6026e', 'customer_id': 'ac47f19b-8535-4094-9af2-320720759256', 'product': 'Smartphone', 'quantity': 1, 'order_date': '2025-02-23T16:45:30.933438', 'total_amount': 490.07}
+2025-03-03 19:45:31,093 - order-processor [S] - INFO - Order: aec606b8-fa08-44e6-a80d-73c65ea6026e: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:45:31,095 - watchdog-service [S] - INFO - New file detected: ./orders/order_ed0084aa-9185-46c6-ae87-834ccc93c726.json
+2025-03-03 19:45:31,096 - order-processor [S] - INFO - Order: aec606b8-fa08-44e6-a80d-73c65ea6026e: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:45:31,099 - order-processor [S] - INFO - Removed file ./orders order_aec606b8-fa08-44e6-a80d-73c65ea6026e.json
+2025-03-03 19:45:31,101 - notification-service [S] - INFO - Notification: Order aec606b8-fa08-44e6-a80d-73c65ea6026e is confirmed
+2025-03-03 19:45:31,121 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_ed0084aa-9185-46c6-ae87-834ccc93c726.json
+2025-03-03 19:45:31,123 - order-processor [S] - INFO - Processing order: {'order_id': 'ed0084aa-9185-46c6-ae87-834ccc93c726', 'customer_id': '5696f49e-56b0-47ed-83cb-a3dd0f7838e0', 'product': None, 'quantity': 4, 'order_date': '2025-02-24T16:45:30.936515', 'total_amount': 1913.29}
+2025-03-03 19:45:31,127 - order-processor [S] - ERROR - Validation: Order: ed0084aa-9185-46c6-ae87-834ccc93c726: Product is required - Sent to the fails queue
+2025-03-03 19:45:33,739 - watchdog-service [S] - INFO - New file detected: ./orders/order_19e6187a-88d7-4690-b5b6-917e6ff70a6a.json
+2025-03-03 19:45:33,755 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_19e6187a-88d7-4690-b5b6-917e6ff70a6a.json
+2025-03-03 19:45:33,758 - order-processor [S] - INFO - Processing order: {'order_id': '19e6187a-88d7-4690-b5b6-917e6ff70a6a', 'customer_id': 'fd6874bb-69be-4276-83b2-548d35fb00e9', 'product': 'Laptop', 'quantity': 5, 'order_date': '2025-02-14T16:45:33.738875', 'total_amount': 1702.13}
+2025-03-03 19:45:33,764 - order-processor [S] - INFO - Order: 19e6187a-88d7-4690-b5b6-917e6ff70a6a: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:45:33,768 - order-processor [S] - INFO - Order: 19e6187a-88d7-4690-b5b6-917e6ff70a6a: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:45:33,770 - order-processor [S] - INFO - Removed file ./orders order_19e6187a-88d7-4690-b5b6-917e6ff70a6a.json
+2025-03-03 19:45:33,771 - notification-service [S] - INFO - Notification: Order 19e6187a-88d7-4690-b5b6-917e6ff70a6a is confirmed
+2025-03-03 19:45:35,146 - watchdog-service [S] - INFO - New file detected: ./orders/order_93d711f0-84c6-4e61-8026-547211205b2c.json
+2025-03-03 19:45:35,156 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_93d711f0-84c6-4e61-8026-547211205b2c.json
+2025-03-03 19:45:35,157 - order-processor [S] - INFO - Processing order: {'order_id': '93d711f0-84c6-4e61-8026-547211205b2c', 'customer_id': '0e6bc886-5dae-482f-a4e0-5d91f664d1d0', 'product': 'Keyboard', 'quantity': 4, 'order_date': '2025-02-08T16:45:35.145873', 'total_amount': 1022.0}
+2025-03-03 19:45:35,161 - order-processor [S] - INFO - Order: 93d711f0-84c6-4e61-8026-547211205b2c: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:45:35,164 - order-processor [S] - INFO - Order: 93d711f0-84c6-4e61-8026-547211205b2c: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:45:35,169 - notification-service [S] - INFO - Notification: Order 93d711f0-84c6-4e61-8026-547211205b2c is confirmed
+2025-03-03 19:45:35,166 - order-processor [S] - INFO - Removed file ./orders order_93d711f0-84c6-4e61-8026-547211205b2c.json
+2025-03-03 19:48:17,332 - notification-service [S] - INFO - Loading configuration for RABBITMQ: success
+2025-03-03 19:48:17,390 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('172.21.0.3', 5672)
+2025-03-03 19:48:17,394 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.21.0.5', 57312), raddr=('172.21.0.3', 5672)>
+2025-03-03 19:48:17,398 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x74b2bd96e910>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x74b2bd96e910> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+2025-03-03 19:48:17,413 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x74b2bd96e910> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2025-03-03 19:48:17,413 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x74b2bd96e910> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2025-03-03 19:48:17,413 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x74b2bd96e910> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2025-03-03 19:48:17,414 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-03-03 19:48:17,438 - notification-service [S] - INFO - [*] Waiting for confirmation messages. To exit press CTRL+C
+2025-03-03 19:48:17,657 - watchdog-service [S] - INFO - Loading configuration for RABBITMQ: success
+2025-03-03 19:48:17,968 - order-processor [S] - INFO - Loading configuration for RABBITMQ: success
+2025-03-03 19:48:17,969 - order-processor [S] - INFO - Loading configuration for MONGODB: success
+2025-03-03 19:48:17,974 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('172.21.0.3', 5672)
+2025-03-03 19:48:17,976 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.21.0.6', 47882), raddr=('172.21.0.3', 5672)>
+2025-03-03 19:48:17,977 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x757b8c05f550>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x757b8c05f550> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+2025-03-03 19:48:17,983 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x757b8c05f550> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2025-03-03 19:48:17,985 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x757b8c05f550> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2025-03-03 19:48:17,986 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x757b8c05f550> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2025-03-03 19:48:17,987 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-03-03 19:48:18,010 - order-processor [S] - INFO - [*] Waiting for order messages. To exit press CTRL+C
+2025-03-03 19:48:29,414 - watchdog-service [S] - INFO - New file detected: ./orders/order_2de36b7a-4610-4d82-b96a-fa05ba6c2148.json
+2025-03-03 19:48:29,429 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('172.21.0.3', 5672)
+2025-03-03 19:48:29,430 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.21.0.4', 46982), raddr=('172.21.0.3', 5672)>
+2025-03-03 19:48:29,436 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x748ea246e580>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x748ea246e580> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+2025-03-03 19:48:29,443 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x748ea246e580> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2025-03-03 19:48:29,443 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x748ea246e580> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2025-03-03 19:48:29,443 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x748ea246e580> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2025-03-03 19:48:29,445 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-03-03 19:48:29,449 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_2de36b7a-4610-4d82-b96a-fa05ba6c2148.json
+2025-03-03 19:48:29,450 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2025-03-03 19:48:29,451 - pika.channel - INFO - Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x748ea246e580> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+2025-03-03 19:48:29,453 - order-processor [S] - INFO - Processing order: {'order_id': '2de36b7a-4610-4d82-b96a-fa05ba6c2148', 'customer_id': '27371787-3e76-4d53-be3f-86dc6f52c1d5', 'product': 'Laptop', 'quantity': 5, 'order_date': '2025-02-04T16:48:29.413594', 'total_amount': 925.98}
+2025-03-03 19:48:29,457 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x748ea246e580> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+2025-03-03 19:48:29,459 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2025-03-03 19:48:29,461 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.21.0.4', 46982), raddr=('172.21.0.3', 5672)>
+2025-03-03 19:48:29,464 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.21.0.4', 46982), raddr=('172.21.0.3', 5672)>
+2025-03-03 19:48:29,467 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.21.0.4', 46982), raddr=('172.21.0.3', 5672)>
+2025-03-03 19:48:29,468 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-03-03 19:48:29,469 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-03-03 19:48:29,470 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.21.0.4', 46982), raddr=('172.21.0.3', 5672)>
+2025-03-03 19:48:29,472 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2025-03-03 19:48:29,474 - watchdog-service [S] - INFO - New file detected: ./orders/order_e08476c2-deeb-4c15-baf3-429c8ed55dc3.json
+2025-03-03 19:48:29,487 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('172.21.0.3', 5672)
+2025-03-03 19:48:29,488 - order-processor [S] - INFO - Order: 2de36b7a-4610-4d82-b96a-fa05ba6c2148: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:48:29,491 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.21.0.4', 46998), raddr=('172.21.0.3', 5672)>
+2025-03-03 19:48:29,493 - order-processor [S] - INFO - Order: 2de36b7a-4610-4d82-b96a-fa05ba6c2148: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:48:29,499 - order-processor [S] - INFO - Removed file ./orders order_2de36b7a-4610-4d82-b96a-fa05ba6c2148.json
+2025-03-03 19:48:29,496 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x748ea246ec10>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x748ea246ec10> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+2025-03-03 19:48:29,500 - notification-service [S] - INFO - Notification: Order 2de36b7a-4610-4d82-b96a-fa05ba6c2148 is confirmed
+2025-03-03 19:48:29,516 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x748ea246ec10> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2025-03-03 19:48:29,518 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x748ea246ec10> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2025-03-03 19:48:29,519 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x748ea246ec10> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2025-03-03 19:48:29,519 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-03-03 19:48:29,525 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_e08476c2-deeb-4c15-baf3-429c8ed55dc3.json
+2025-03-03 19:48:29,528 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2025-03-03 19:48:29,529 - pika.channel - INFO - Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x748ea246ec10> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+2025-03-03 19:48:29,530 - order-processor [S] - INFO - Processing order: {'order_id': 'e08476c2-deeb-4c15-baf3-429c8ed55dc3', 'customer_id': 'cb31a398-fde4-4c66-9315-67ad70926e1f', 'product': 'Keyboard', 'quantity': 3, 'order_date': '2025-02-28T16:48:29.414463', 'total_amount': 973.45}
+2025-03-03 19:48:29,537 - order-processor [S] - INFO - Order: e08476c2-deeb-4c15-baf3-429c8ed55dc3: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:48:29,539 - order-processor [S] - INFO - Order: e08476c2-deeb-4c15-baf3-429c8ed55dc3: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:48:29,539 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x748ea246ec10> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+2025-03-03 19:48:29,540 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2025-03-03 19:48:29,541 - order-processor [S] - INFO - Removed file ./orders order_e08476c2-deeb-4c15-baf3-429c8ed55dc3.json
+2025-03-03 19:48:29,544 - notification-service [S] - INFO - Notification: Order e08476c2-deeb-4c15-baf3-429c8ed55dc3 is confirmed
+2025-03-03 19:48:29,547 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.21.0.4', 46998), raddr=('172.21.0.3', 5672)>
+2025-03-03 19:48:29,548 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.21.0.4', 46998), raddr=('172.21.0.3', 5672)>
+2025-03-03 19:48:29,549 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.21.0.4', 46998), raddr=('172.21.0.3', 5672)>
+2025-03-03 19:48:29,550 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-03-03 19:48:29,551 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-03-03 19:48:29,551 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.21.0.4', 46998), raddr=('172.21.0.3', 5672)>
+2025-03-03 19:48:29,553 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2025-03-03 19:48:32,763 - watchdog-service [S] - INFO - New file detected: ./orders/order_5e52866d-cc3f-419b-b268-9962ac38322b.json
+2025-03-03 19:48:32,765 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('172.21.0.3', 5672)
+2025-03-03 19:48:32,766 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.21.0.4', 47006), raddr=('172.21.0.3', 5672)>
+2025-03-03 19:48:32,767 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x748ea21e28e0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x748ea21e28e0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+2025-03-03 19:48:32,773 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x748ea21e28e0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2025-03-03 19:48:32,773 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x748ea21e28e0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2025-03-03 19:48:32,774 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x748ea21e28e0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2025-03-03 19:48:32,775 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-03-03 19:48:32,778 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_5e52866d-cc3f-419b-b268-9962ac38322b.json
+2025-03-03 19:48:32,778 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2025-03-03 19:48:32,778 - pika.channel - INFO - Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x748ea21e28e0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+2025-03-03 19:48:32,780 - order-processor [S] - INFO - Processing order: {'order_id': '5e52866d-cc3f-419b-b268-9962ac38322b', 'customer_id': 'ccdca84d-00be-4d2c-89d0-99afac88ed99', 'product': 'Headphones', 'quantity': 3, 'order_date': '2025-02-02T16:48:32.761802', 'total_amount': 751.48}
+2025-03-03 19:48:32,783 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x748ea21e28e0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+2025-03-03 19:48:32,786 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2025-03-03 19:48:32,787 - order-processor [S] - INFO - Order: 5e52866d-cc3f-419b-b268-9962ac38322b: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:48:32,789 - order-processor [S] - INFO - Order: 5e52866d-cc3f-419b-b268-9962ac38322b: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:48:32,791 - order-processor [S] - INFO - Removed file ./orders order_5e52866d-cc3f-419b-b268-9962ac38322b.json
+2025-03-03 19:48:32,795 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.21.0.4', 47006), raddr=('172.21.0.3', 5672)>
+2025-03-03 19:48:32,796 - notification-service [S] - INFO - Notification: Order 5e52866d-cc3f-419b-b268-9962ac38322b is confirmed
+2025-03-03 19:48:32,797 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.21.0.4', 47006), raddr=('172.21.0.3', 5672)>
+2025-03-03 19:48:32,798 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.21.0.4', 47006), raddr=('172.21.0.3', 5672)>
+2025-03-03 19:48:32,799 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-03-03 19:48:32,799 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-03-03 19:48:32,799 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.21.0.4', 47006), raddr=('172.21.0.3', 5672)>
+2025-03-03 19:48:32,805 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2025-03-03 19:48:32,808 - watchdog-service [S] - INFO - New file detected: ./orders/order_e4c04f9a-aca9-4ca9-8941-85baaeb30f8d.json
+2025-03-03 19:48:32,813 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('172.21.0.3', 5672)
+2025-03-03 19:48:32,815 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.21.0.4', 47018), raddr=('172.21.0.3', 5672)>
+2025-03-03 19:48:32,817 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x748ea1be0f10>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x748ea1be0f10> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+2025-03-03 19:48:32,828 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x748ea1be0f10> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2025-03-03 19:48:32,829 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x748ea1be0f10> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2025-03-03 19:48:32,830 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x748ea1be0f10> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2025-03-03 19:48:32,831 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-03-03 19:48:32,838 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_e4c04f9a-aca9-4ca9-8941-85baaeb30f8d.json
+2025-03-03 19:48:32,839 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2025-03-03 19:48:32,840 - pika.channel - INFO - Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x748ea1be0f10> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+2025-03-03 19:48:32,842 - order-processor [S] - INFO - Processing order: {'order_id': 'e4c04f9a-aca9-4ca9-8941-85baaeb30f8d', 'customer_id': 'da90bb8c-a5b4-4402-ad97-feb4e0a48992', 'product': 'Tablet', 'quantity': 5, 'order_date': '2025-02-09T16:48:32.762122', 'total_amount': 1686.2}
+2025-03-03 19:48:32,843 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x748ea1be0f10> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+2025-03-03 19:48:32,845 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2025-03-03 19:48:32,847 - order-processor [S] - INFO - Order: e4c04f9a-aca9-4ca9-8941-85baaeb30f8d: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:48:32,849 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.21.0.4', 47018), raddr=('172.21.0.3', 5672)>
+2025-03-03 19:48:32,850 - order-processor [S] - INFO - Order: e4c04f9a-aca9-4ca9-8941-85baaeb30f8d: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:48:32,851 - notification-service [S] - INFO - Notification: Order e4c04f9a-aca9-4ca9-8941-85baaeb30f8d is confirmed
+2025-03-03 19:48:32,852 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.21.0.4', 47018), raddr=('172.21.0.3', 5672)>
+2025-03-03 19:48:32,853 - order-processor [S] - INFO - Removed file ./orders order_e4c04f9a-aca9-4ca9-8941-85baaeb30f8d.json
+2025-03-03 19:48:32,856 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.21.0.4', 47018), raddr=('172.21.0.3', 5672)>
+2025-03-03 19:48:32,856 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-03-03 19:48:32,857 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-03-03 19:48:32,857 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.21.0.4', 47018), raddr=('172.21.0.3', 5672)>
+2025-03-03 19:48:32,858 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2025-03-03 19:49:38,929 - notification-service [S] - INFO - Loading configuration for RABBITMQ: success
+2025-03-03 19:49:39,040 - notification-service [S] - INFO - [*] Waiting for confirmation messages. To exit press CTRL+C
+2025-03-03 19:49:39,552 - watchdog-service [S] - INFO - Loading configuration for RABBITMQ: success
+2025-03-03 19:49:39,829 - order-processor [S] - INFO - Loading configuration for RABBITMQ: success
+2025-03-03 19:49:39,830 - order-processor [S] - INFO - Loading configuration for MONGODB: success
+2025-03-03 19:49:39,858 - order-processor [S] - INFO - [*] Waiting for order messages. To exit press CTRL+C
+2025-03-03 19:49:41,557 - watchdog-service [S] - INFO - New file detected: ./orders/order_15c155e1-0a6e-4788-bb7f-9c5b7089025b.json
+2025-03-03 19:49:41,587 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_15c155e1-0a6e-4788-bb7f-9c5b7089025b.json
+2025-03-03 19:49:41,589 - order-processor [S] - INFO - Processing order: {'order_id': '15c155e1-0a6e-4788-bb7f-9c5b7089025b', 'customer_id': '9d168db8-3397-4aa3-8191-f406c9a3cd60', 'product': 'Smartphone', 'quantity': 1, 'order_date': '2025-02-16T16:49:41.556189', 'total_amount': 1093.67}
+2025-03-03 19:49:41,594 - watchdog-service [S] - INFO - New file detected: ./orders/order_1e6d22ff-c22a-4116-86a1-77e05daf9df9.json
+2025-03-03 19:49:41,607 - order-processor [S] - INFO - Order: 15c155e1-0a6e-4788-bb7f-9c5b7089025b: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:49:41,608 - order-processor [S] - INFO - Order: 15c155e1-0a6e-4788-bb7f-9c5b7089025b: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:49:41,610 - notification-service [S] - INFO - Notification: Order 15c155e1-0a6e-4788-bb7f-9c5b7089025b is confirmed
+2025-03-03 19:49:41,610 - order-processor [S] - INFO - Removed file ./orders order_15c155e1-0a6e-4788-bb7f-9c5b7089025b.json
+2025-03-03 19:49:41,614 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_1e6d22ff-c22a-4116-86a1-77e05daf9df9.json
+2025-03-03 19:49:41,616 - order-processor [S] - INFO - Processing order: {'order_id': '1e6d22ff-c22a-4116-86a1-77e05daf9df9', 'customer_id': '4219e63d-0259-4920-beaa-fc28b589ce69', 'product': 'Headphones', 'quantity': 5, 'order_date': '2025-03-03T16:49:41.556906', 'total_amount': 640.46}
+2025-03-03 19:49:41,618 - order-processor [S] - INFO - Order: 1e6d22ff-c22a-4116-86a1-77e05daf9df9: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:49:41,620 - watchdog-service [S] - INFO - New file detected: ./orders/order_896fb597-3e96-45e1-a949-7f826aef0e6d.json
+2025-03-03 19:49:41,620 - order-processor [S] - INFO - Order: 1e6d22ff-c22a-4116-86a1-77e05daf9df9: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:49:41,621 - order-processor [S] - INFO - Removed file ./orders order_1e6d22ff-c22a-4116-86a1-77e05daf9df9.json
+2025-03-03 19:49:41,622 - notification-service [S] - INFO - Notification: Order 1e6d22ff-c22a-4116-86a1-77e05daf9df9 is confirmed
+2025-03-03 19:49:41,632 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_896fb597-3e96-45e1-a949-7f826aef0e6d.json
+2025-03-03 19:49:41,634 - order-processor [S] - INFO - Processing order: {'order_id': '896fb597-3e96-45e1-a949-7f826aef0e6d', 'customer_id': 'cf3b775c-2a84-4c0c-83c8-a31e7ed12391', 'product': 'Headphones', 'quantity': 5, 'order_date': '2025-02-19T16:49:41.557089', 'total_amount': 1718.26}
+2025-03-03 19:49:41,636 - watchdog-service [S] - INFO - New file detected: ./orders/order_afdc4a31-f905-402d-8d92-8f32e58829b4.json
+2025-03-03 19:49:41,638 - order-processor [S] - INFO - Order: 896fb597-3e96-45e1-a949-7f826aef0e6d: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:49:41,640 - order-processor [S] - INFO - Order: 896fb597-3e96-45e1-a949-7f826aef0e6d: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:49:41,642 - order-processor [S] - INFO - Removed file ./orders order_896fb597-3e96-45e1-a949-7f826aef0e6d.json
+2025-03-03 19:49:41,643 - notification-service [S] - INFO - Notification: Order 896fb597-3e96-45e1-a949-7f826aef0e6d is confirmed
+2025-03-03 19:49:41,654 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_afdc4a31-f905-402d-8d92-8f32e58829b4.json
+2025-03-03 19:49:41,657 - order-processor [S] - INFO - Processing order: {'order_id': 'afdc4a31-f905-402d-8d92-8f32e58829b4', 'customer_id': '2afb96a4-5c39-4a2c-a234-4d3fa75f9db2', 'product': None, 'quantity': 3, 'order_date': '2025-02-07T16:49:41.557261', 'total_amount': 1605.5}
+2025-03-03 19:49:41,659 - order-processor [S] - ERROR - Validation: Order: afdc4a31-f905-402d-8d92-8f32e58829b4: Product is required - Sent to the fails queue
+2025-03-03 19:49:41,662 - watchdog-service [S] - INFO - New file detected: ./orders/order_2190daf8-9365-489a-95bc-dc4d65d3553f.json
+2025-03-03 19:49:41,677 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_2190daf8-9365-489a-95bc-dc4d65d3553f.json
+2025-03-03 19:49:41,679 - order-processor [S] - INFO - Processing order: {'order_id': '2190daf8-9365-489a-95bc-dc4d65d3553f', 'customer_id': '03686558-91e4-4c74-883f-8f91734f26f6', 'product': None, 'quantity': 4, 'order_date': '2025-02-19T16:49:41.557455', 'total_amount': 825.09}
+2025-03-03 19:49:41,682 - order-processor [S] - ERROR - Validation: Order: 2190daf8-9365-489a-95bc-dc4d65d3553f: Product is required - Sent to the fails queue
+2025-03-03 19:49:41,684 - watchdog-service [S] - INFO - New file detected: ./orders/order_5d510f57-44b4-4af4-98b4-0fbe5809c535.json
+2025-03-03 19:49:41,701 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_5d510f57-44b4-4af4-98b4-0fbe5809c535.json
+2025-03-03 19:49:41,702 - order-processor [S] - INFO - Processing order: {'order_id': '5d510f57-44b4-4af4-98b4-0fbe5809c535', 'customer_id': '3b68c3e5-67fd-4b00-ad0d-67b20a6a473c', 'product': 'Headphones', 'quantity': 3, 'order_date': '2025-02-25T16:49:41.561284', 'total_amount': 1294.97}
+2025-03-03 19:49:41,705 - order-processor [S] - INFO - Order: 5d510f57-44b4-4af4-98b4-0fbe5809c535: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:49:41,707 - order-processor [S] - INFO - Order: 5d510f57-44b4-4af4-98b4-0fbe5809c535: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:49:41,707 - order-processor [S] - INFO - Removed file ./orders order_5d510f57-44b4-4af4-98b4-0fbe5809c535.json
+2025-03-03 19:49:41,709 - notification-service [S] - INFO - Notification: Order 5d510f57-44b4-4af4-98b4-0fbe5809c535 is confirmed
+2025-03-03 19:49:44,932 - watchdog-service [S] - INFO - New file detected: ./orders/order_11679ddf-d325-4991-bf4d-1bb75147e76e.json
+2025-03-03 19:49:44,947 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_11679ddf-d325-4991-bf4d-1bb75147e76e.json
+2025-03-03 19:49:44,950 - order-processor [S] - INFO - Processing order: {'order_id': '11679ddf-d325-4991-bf4d-1bb75147e76e', 'customer_id': '50ef6d66-8eb9-4281-8f76-07c5864d6d91', 'product': 'Tablet', 'quantity': 4, 'order_date': '2025-03-01T16:49:44.930831', 'total_amount': 1905.61}
+2025-03-03 19:49:44,954 - order-processor [S] - INFO - Order: 11679ddf-d325-4991-bf4d-1bb75147e76e: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:49:44,958 - order-processor [S] - INFO - Order: 11679ddf-d325-4991-bf4d-1bb75147e76e: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:49:44,958 - order-processor [S] - INFO - Removed file ./orders order_11679ddf-d325-4991-bf4d-1bb75147e76e.json
+2025-03-03 19:49:44,960 - watchdog-service [S] - INFO - New file detected: ./orders/order_d23cb9bb-244e-4db1-9dd7-fc8d3375409d.json
+2025-03-03 19:49:44,962 - notification-service [S] - INFO - Notification: Order 11679ddf-d325-4991-bf4d-1bb75147e76e is confirmed
+2025-03-03 19:49:44,980 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_d23cb9bb-244e-4db1-9dd7-fc8d3375409d.json
+2025-03-03 19:49:44,983 - order-processor [S] - INFO - Processing order: {'order_id': 'd23cb9bb-244e-4db1-9dd7-fc8d3375409d', 'customer_id': 'a2d74af5-c85e-4ad6-a651-ad5529ca26ba', 'product': 'Tablet', 'quantity': 1, 'order_date': '2025-02-02T16:49:44.931104', 'total_amount': 1941.9}
+2025-03-03 19:49:44,988 - order-processor [S] - INFO - Order: d23cb9bb-244e-4db1-9dd7-fc8d3375409d: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:49:44,993 - order-processor [S] - INFO - Order: d23cb9bb-244e-4db1-9dd7-fc8d3375409d: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:49:44,997 - notification-service [S] - INFO - Notification: Order d23cb9bb-244e-4db1-9dd7-fc8d3375409d is confirmed
+2025-03-03 19:49:44,995 - order-processor [S] - INFO - Removed file ./orders order_d23cb9bb-244e-4db1-9dd7-fc8d3375409d.json
+2025-03-03 19:49:44,997 - watchdog-service [S] - INFO - New file detected: ./orders/order_5027f7a9-2091-431d-b352-2523a1e2fadb.json
+2025-03-03 19:49:45,030 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_5027f7a9-2091-431d-b352-2523a1e2fadb.json
+2025-03-03 19:49:45,031 - order-processor [S] - INFO - Processing order: {'order_id': '5027f7a9-2091-431d-b352-2523a1e2fadb', 'customer_id': '933b4173-e12a-4cbb-a8dd-8cc4195b325a', 'product': 'Smartphone', 'quantity': 5, 'order_date': '2025-02-04T16:49:44.931278', 'total_amount': 496.43}
+2025-03-03 19:49:45,035 - order-processor [S] - INFO - Order: 5027f7a9-2091-431d-b352-2523a1e2fadb: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:49:45,038 - order-processor [S] - INFO - Order: 5027f7a9-2091-431d-b352-2523a1e2fadb: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:49:45,039 - order-processor [S] - INFO - Removed file ./orders order_5027f7a9-2091-431d-b352-2523a1e2fadb.json
+2025-03-03 19:49:45,042 - notification-service [S] - INFO - Notification: Order 5027f7a9-2091-431d-b352-2523a1e2fadb is confirmed
+2025-03-03 19:49:45,040 - watchdog-service [S] - INFO - New file detected: ./orders/order_42225af0-7c98-43d8-973f-9da82e81b7a7.json
+2025-03-03 19:49:45,054 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_42225af0-7c98-43d8-973f-9da82e81b7a7.json
+2025-03-03 19:49:45,056 - order-processor [S] - INFO - Processing order: {'order_id': '42225af0-7c98-43d8-973f-9da82e81b7a7', 'customer_id': '38e4dd51-1c08-4210-bd6c-60c1901d6f3c', 'product': None, 'quantity': 1, 'order_date': '2025-02-23T16:49:44.931463', 'total_amount': 825.96}
+2025-03-03 19:49:45,057 - order-processor [S] - ERROR - Validation: Order: 42225af0-7c98-43d8-973f-9da82e81b7a7: Product is required - Sent to the fails queue
+2025-03-03 19:49:45,060 - watchdog-service [S] - INFO - New file detected: ./orders/order_fd3e184b-08b9-4be7-a59e-a823758e2ce9.json
+2025-03-03 19:49:45,081 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_fd3e184b-08b9-4be7-a59e-a823758e2ce9.json
+2025-03-03 19:49:45,085 - order-processor [S] - INFO - Processing order: {'order_id': 'fd3e184b-08b9-4be7-a59e-a823758e2ce9', 'customer_id': '504650b2-6d91-4751-bf72-71246bd23c35', 'product': 'Laptop', 'quantity': 3, 'order_date': '2025-02-25T16:49:44.934181', 'total_amount': 144.64}
+2025-03-03 19:49:45,091 - order-processor [S] - INFO - Order: fd3e184b-08b9-4be7-a59e-a823758e2ce9: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:49:45,093 - order-processor [S] - INFO - Order: fd3e184b-08b9-4be7-a59e-a823758e2ce9: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:49:45,095 - notification-service [S] - INFO - Notification: Order fd3e184b-08b9-4be7-a59e-a823758e2ce9 is confirmed
+2025-03-03 19:49:45,096 - order-processor [S] - INFO - Removed file ./orders order_fd3e184b-08b9-4be7-a59e-a823758e2ce9.json
+2025-03-03 19:49:46,550 - watchdog-service [S] - INFO - New file detected: ./orders/order_ea58597d-c785-47bd-979c-2a40e183748c.json
+2025-03-03 19:49:46,560 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_ea58597d-c785-47bd-979c-2a40e183748c.json
+2025-03-03 19:49:46,562 - order-processor [S] - INFO - Processing order: {'order_id': 'ea58597d-c785-47bd-979c-2a40e183748c', 'customer_id': '1830b1f3-ae6b-46f8-871d-fc1e09ff9189', 'product': 'Laptop', 'quantity': 5, 'order_date': '2025-02-05T16:49:46.549603', 'total_amount': 1202.06}
+2025-03-03 19:49:46,564 - order-processor [S] - INFO - Order: ea58597d-c785-47bd-979c-2a40e183748c: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:49:46,567 - order-processor [S] - INFO - Order: ea58597d-c785-47bd-979c-2a40e183748c: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:49:46,572 - notification-service [S] - INFO - Notification: Order ea58597d-c785-47bd-979c-2a40e183748c is confirmed
+2025-03-03 19:49:46,570 - order-processor [S] - INFO - Removed file ./orders order_ea58597d-c785-47bd-979c-2a40e183748c.json
+2025-03-03 19:49:49,509 - watchdog-service [S] - INFO - New file detected: ./orders/order_866a3f22-73b9-4648-afb9-2e9fd46764e7.json
+2025-03-03 19:49:49,524 - order-processor [S] - INFO - Processing order: {'order_id': '866a3f22-73b9-4648-afb9-2e9fd46764e7', 'customer_id': 'fefd5297-3879-4ac8-b271-674b53d3b54f', 'product': None, 'quantity': 5, 'order_date': '2025-02-26T16:49:49.507046', 'total_amount': 1161.61}
+2025-03-03 19:49:49,524 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_866a3f22-73b9-4648-afb9-2e9fd46764e7.json
+2025-03-03 19:49:49,529 - order-processor [S] - ERROR - Validation: Order: 866a3f22-73b9-4648-afb9-2e9fd46764e7: Product is required - Sent to the fails queue
+2025-03-03 19:49:49,534 - watchdog-service [S] - INFO - New file detected: ./orders/order_d249e735-cc52-46f3-9e6f-529cdae879f3.json
+2025-03-03 19:49:49,556 - order-processor [S] - INFO - Processing order: {'order_id': 'd249e735-cc52-46f3-9e6f-529cdae879f3', 'customer_id': '7d33a5bb-c2ab-477d-89bf-713329010bdf', 'product': 'Headphones', 'quantity': 5, 'order_date': '2025-02-02T16:49:49.507352', 'total_amount': 681.87}
+2025-03-03 19:49:49,556 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_d249e735-cc52-46f3-9e6f-529cdae879f3.json
+2025-03-03 19:49:49,562 - order-processor [S] - INFO - Order: d249e735-cc52-46f3-9e6f-529cdae879f3: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:49:49,566 - order-processor [S] - INFO - Order: d249e735-cc52-46f3-9e6f-529cdae879f3: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:49:49,568 - order-processor [S] - INFO - Removed file ./orders order_d249e735-cc52-46f3-9e6f-529cdae879f3.json
+2025-03-03 19:49:49,569 - watchdog-service [S] - INFO - New file detected: ./orders/order_9ee6e2c4-8e12-42f8-bc26-f1f61dc4733b.json
+2025-03-03 19:49:49,573 - notification-service [S] - INFO - Notification: Order d249e735-cc52-46f3-9e6f-529cdae879f3 is confirmed
+2025-03-03 19:49:49,592 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_9ee6e2c4-8e12-42f8-bc26-f1f61dc4733b.json
+2025-03-03 19:49:49,595 - order-processor [S] - INFO - Processing order: {'order_id': '9ee6e2c4-8e12-42f8-bc26-f1f61dc4733b', 'customer_id': 'f5a54530-73c4-4021-9e24-4ab0dd17d7c5', 'product': 'Keyboard', 'quantity': 1, 'order_date': '2025-03-02T16:49:49.507598', 'total_amount': 859.4}
+2025-03-03 19:49:49,599 - order-processor [S] - INFO - Order: 9ee6e2c4-8e12-42f8-bc26-f1f61dc4733b: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:49:49,602 - watchdog-service [S] - INFO - New file detected: ./orders/order_35391e52-7a6e-47dd-b3eb-b59c5c062fc2.json
+2025-03-03 19:49:49,601 - order-processor [S] - INFO - Order: 9ee6e2c4-8e12-42f8-bc26-f1f61dc4733b: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:49:49,605 - order-processor [S] - INFO - Removed file ./orders order_9ee6e2c4-8e12-42f8-bc26-f1f61dc4733b.json
+2025-03-03 19:49:49,608 - notification-service [S] - INFO - Notification: Order 9ee6e2c4-8e12-42f8-bc26-f1f61dc4733b is confirmed
+2025-03-03 19:49:49,627 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_35391e52-7a6e-47dd-b3eb-b59c5c062fc2.json
+2025-03-03 19:49:49,628 - order-processor [S] - INFO - Processing order: {'order_id': '35391e52-7a6e-47dd-b3eb-b59c5c062fc2', 'customer_id': '593febe5-edbc-405e-a81e-5449812d27a0', 'product': 'Keyboard', 'quantity': 3, 'order_date': '2025-02-06T16:49:49.507767', 'total_amount': 430.67}
+2025-03-03 19:49:49,633 - order-processor [S] - INFO - Order: 35391e52-7a6e-47dd-b3eb-b59c5c062fc2: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:49:49,634 - order-processor [S] - INFO - Order: 35391e52-7a6e-47dd-b3eb-b59c5c062fc2: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:49:49,636 - watchdog-service [S] - INFO - New file detected: ./orders/order_5fa96083-0717-4817-8b8a-535e83c0760d.json
+2025-03-03 19:49:49,638 - order-processor [S] - INFO - Removed file ./orders order_35391e52-7a6e-47dd-b3eb-b59c5c062fc2.json
+2025-03-03 19:49:49,641 - notification-service [S] - INFO - Notification: Order 35391e52-7a6e-47dd-b3eb-b59c5c062fc2 is confirmed
+2025-03-03 19:49:49,655 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_5fa96083-0717-4817-8b8a-535e83c0760d.json
+2025-03-03 19:49:49,657 - order-processor [S] - INFO - Processing order: {'order_id': '5fa96083-0717-4817-8b8a-535e83c0760d', 'customer_id': '481b3e10-504c-4543-9f91-43f73e288bd7', 'product': 'Tablet', 'quantity': 5, 'order_date': '2025-02-22T16:49:49.507916', 'total_amount': 234.85}
+2025-03-03 19:49:49,660 - order-processor [S] - INFO - Order: 5fa96083-0717-4817-8b8a-535e83c0760d: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:49:49,662 - order-processor [S] - INFO - Order: 5fa96083-0717-4817-8b8a-535e83c0760d: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:49:49,663 - order-processor [S] - INFO - Removed file ./orders order_5fa96083-0717-4817-8b8a-535e83c0760d.json
+2025-03-03 19:49:49,666 - notification-service [S] - INFO - Notification: Order 5fa96083-0717-4817-8b8a-535e83c0760d is confirmed
+2025-03-03 19:49:49,668 - watchdog-service [S] - INFO - New file detected: ./orders/order_76e6b6ba-a078-44d7-b706-c5719294ccdb.json
+2025-03-03 19:49:49,681 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_76e6b6ba-a078-44d7-b706-c5719294ccdb.json
+2025-03-03 19:49:49,685 - order-processor [S] - INFO - Processing order: {'order_id': '76e6b6ba-a078-44d7-b706-c5719294ccdb', 'customer_id': '28291c48-b40c-47c2-a774-2ed53f26c6e1', 'product': 'Laptop', 'quantity': 5, 'order_date': '2025-02-17T16:49:49.508060', 'total_amount': 1865.31}
+2025-03-03 19:49:49,691 - order-processor [S] - INFO - Order: 76e6b6ba-a078-44d7-b706-c5719294ccdb: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:49:49,694 - order-processor [S] - INFO - Order: 76e6b6ba-a078-44d7-b706-c5719294ccdb: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:49:49,698 - order-processor [S] - INFO - Removed file ./orders order_76e6b6ba-a078-44d7-b706-c5719294ccdb.json
+2025-03-03 19:49:49,699 - notification-service [S] - INFO - Notification: Order 76e6b6ba-a078-44d7-b706-c5719294ccdb is confirmed
+2025-03-03 19:49:52,571 - watchdog-service [S] - INFO - New file detected: ./orders/order_e758eda0-9bfb-445f-b3c9-4a3c3ecf0805.json
+2025-03-03 19:49:52,584 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_e758eda0-9bfb-445f-b3c9-4a3c3ecf0805.json
+2025-03-03 19:49:52,587 - order-processor [S] - INFO - Processing order: {'order_id': 'e758eda0-9bfb-445f-b3c9-4a3c3ecf0805', 'customer_id': '8fdf3c7d-c679-46a7-9736-6acd491aa7c7', 'product': None, 'quantity': 5, 'order_date': '2025-02-02T16:49:52.568030', 'total_amount': 1091.44}
+2025-03-03 19:49:52,590 - order-processor [S] - ERROR - Validation: Order: e758eda0-9bfb-445f-b3c9-4a3c3ecf0805: Product is required - Sent to the fails queue
+2025-03-03 19:49:52,595 - watchdog-service [S] - INFO - New file detected: ./orders/order_577913fd-8a51-4371-9b93-5c225f411f74.json
+2025-03-03 19:49:52,607 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_577913fd-8a51-4371-9b93-5c225f411f74.json
+2025-03-03 19:49:52,609 - order-processor [S] - INFO - Processing order: {'order_id': '577913fd-8a51-4371-9b93-5c225f411f74', 'customer_id': '554d4f52-a659-4b41-b41e-9f2da2dffd5f', 'product': 'Keyboard', 'quantity': 2, 'order_date': '2025-03-02T16:49:52.568336', 'total_amount': 364.1}
+2025-03-03 19:49:52,611 - order-processor [S] - INFO - Order: 577913fd-8a51-4371-9b93-5c225f411f74: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:49:52,614 - order-processor [S] - INFO - Order: 577913fd-8a51-4371-9b93-5c225f411f74: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:49:52,615 - order-processor [S] - INFO - Removed file ./orders order_577913fd-8a51-4371-9b93-5c225f411f74.json
+2025-03-03 19:49:52,617 - notification-service [S] - INFO - Notification: Order 577913fd-8a51-4371-9b93-5c225f411f74 is confirmed
+2025-03-03 19:49:52,619 - watchdog-service [S] - INFO - New file detected: ./orders/order_b9022150-92b3-4591-9bb0-0f6886627840.json
+2025-03-03 19:49:52,632 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_b9022150-92b3-4591-9bb0-0f6886627840.json
+2025-03-03 19:49:52,635 - order-processor [S] - INFO - Processing order: {'order_id': 'b9022150-92b3-4591-9bb0-0f6886627840', 'customer_id': '1d4f6335-666a-4958-b473-d9e912adb6e8', 'product': 'Headphones', 'quantity': 5, 'order_date': '2025-02-12T16:49:52.568508', 'total_amount': 1238.29}
+2025-03-03 19:49:52,638 - order-processor [S] - INFO - Order: b9022150-92b3-4591-9bb0-0f6886627840: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:49:52,640 - watchdog-service [S] - INFO - New file detected: ./orders/order_4e226449-b384-4763-88bf-0c079c0129e9.json
+2025-03-03 19:49:52,641 - order-processor [S] - INFO - Order: b9022150-92b3-4591-9bb0-0f6886627840: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:49:52,644 - order-processor [S] - INFO - Removed file ./orders order_b9022150-92b3-4591-9bb0-0f6886627840.json
+2025-03-03 19:49:52,645 - notification-service [S] - INFO - Notification: Order b9022150-92b3-4591-9bb0-0f6886627840 is confirmed
+2025-03-03 19:49:52,675 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_4e226449-b384-4763-88bf-0c079c0129e9.json
+2025-03-03 19:49:52,677 - order-processor [S] - INFO - Processing order: {'order_id': '4e226449-b384-4763-88bf-0c079c0129e9', 'customer_id': '3d21519f-8387-4f85-acf3-b774ab8261fc', 'product': None, 'quantity': 1, 'order_date': '2025-02-08T16:49:52.568736', 'total_amount': 803.87}
+2025-03-03 19:49:52,680 - order-processor [S] - ERROR - Validation: Order: 4e226449-b384-4763-88bf-0c079c0129e9: Product is required - Sent to the fails queue
+2025-03-03 19:49:52,686 - watchdog-service [S] - INFO - New file detected: ./orders/order_36707218-18d8-43dd-b06a-63190c5506f3.json
+2025-03-03 19:49:52,712 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_36707218-18d8-43dd-b06a-63190c5506f3.json
+2025-03-03 19:49:52,714 - order-processor [S] - INFO - Processing order: {'order_id': '36707218-18d8-43dd-b06a-63190c5506f3', 'customer_id': 'a843c8c9-e73b-487a-93a9-0bc33f71891b', 'product': 'Laptop', 'quantity': 4, 'order_date': '2025-02-03T16:49:52.568898', 'total_amount': 197.34}
+2025-03-03 19:49:52,717 - order-processor [S] - INFO - Order: 36707218-18d8-43dd-b06a-63190c5506f3: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:49:52,718 - watchdog-service [S] - INFO - New file detected: ./orders/order_cb8c94df-b08e-4cbb-9306-1bad196cbddb.json
+2025-03-03 19:49:52,721 - order-processor [S] - INFO - Order: 36707218-18d8-43dd-b06a-63190c5506f3: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:49:52,724 - order-processor [S] - INFO - Removed file ./orders order_36707218-18d8-43dd-b06a-63190c5506f3.json
+2025-03-03 19:49:52,726 - notification-service [S] - INFO - Notification: Order 36707218-18d8-43dd-b06a-63190c5506f3 is confirmed
+2025-03-03 19:49:52,746 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_cb8c94df-b08e-4cbb-9306-1bad196cbddb.json
+2025-03-03 19:49:52,749 - order-processor [S] - INFO - Processing order: {'order_id': 'cb8c94df-b08e-4cbb-9306-1bad196cbddb', 'customer_id': 'b2698a17-3522-423d-962c-88c0cbd509fe', 'product': 'Headphones', 'quantity': 5, 'order_date': '2025-02-21T16:49:52.569049', 'total_amount': 1753.71}
+2025-03-03 19:49:52,754 - order-processor [S] - INFO - Order: cb8c94df-b08e-4cbb-9306-1bad196cbddb: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:49:52,757 - order-processor [S] - INFO - Order: cb8c94df-b08e-4cbb-9306-1bad196cbddb: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:49:52,759 - order-processor [S] - INFO - Removed file ./orders order_cb8c94df-b08e-4cbb-9306-1bad196cbddb.json
+2025-03-03 19:49:52,762 - notification-service [S] - INFO - Notification: Order cb8c94df-b08e-4cbb-9306-1bad196cbddb is confirmed
+2025-03-03 19:49:57,436 - watchdog-service [S] - INFO - New file detected: ./orders/order_bef78714-c3ad-4a7a-acf7-1d7bb3ba3306.json
+2025-03-03 19:49:57,454 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_bef78714-c3ad-4a7a-acf7-1d7bb3ba3306.json
+2025-03-03 19:49:57,459 - order-processor [S] - INFO - Processing order: {'order_id': 'bef78714-c3ad-4a7a-acf7-1d7bb3ba3306', 'customer_id': '04808a2e-0355-4e6b-9df3-fd4cddefb1bd', 'product': 'Tablet', 'quantity': 1, 'order_date': '2025-02-07T16:49:57.436301', 'total_amount': 720.66}
+2025-03-03 19:49:57,461 - order-processor [S] - INFO - Order: bef78714-c3ad-4a7a-acf7-1d7bb3ba3306: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:49:57,463 - order-processor [S] - INFO - Order: bef78714-c3ad-4a7a-acf7-1d7bb3ba3306: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:49:57,464 - watchdog-service [S] - INFO - New file detected: ./orders/order_7893ed0f-2315-4b0a-a657-7d1adff6b586.json
+2025-03-03 19:49:57,467 - order-processor [S] - INFO - Removed file ./orders order_bef78714-c3ad-4a7a-acf7-1d7bb3ba3306.json
+2025-03-03 19:49:57,468 - notification-service [S] - INFO - Notification: Order bef78714-c3ad-4a7a-acf7-1d7bb3ba3306 is confirmed
+2025-03-03 19:49:57,483 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_7893ed0f-2315-4b0a-a657-7d1adff6b586.json
+2025-03-03 19:49:57,485 - order-processor [S] - INFO - Processing order: {'order_id': '7893ed0f-2315-4b0a-a657-7d1adff6b586', 'customer_id': '51c87f80-aed0-4961-90c0-3e604d55263f', 'product': 'Tablet', 'quantity': 3, 'order_date': '2025-02-18T16:49:57.437320', 'total_amount': 635.8}
+2025-03-03 19:49:57,490 - order-processor [S] - INFO - Order: 7893ed0f-2315-4b0a-a657-7d1adff6b586: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:49:57,493 - watchdog-service [S] - INFO - New file detected: ./orders/order_02383237-b94f-4570-9c14-f0445560ccfe.json
+2025-03-03 19:49:57,494 - order-processor [S] - INFO - Order: 7893ed0f-2315-4b0a-a657-7d1adff6b586: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:49:57,497 - notification-service [S] - INFO - Notification: Order 7893ed0f-2315-4b0a-a657-7d1adff6b586 is confirmed
+2025-03-03 19:49:57,499 - order-processor [S] - INFO - Removed file ./orders order_7893ed0f-2315-4b0a-a657-7d1adff6b586.json
+2025-03-03 19:49:57,515 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_02383237-b94f-4570-9c14-f0445560ccfe.json
+2025-03-03 19:49:57,516 - order-processor [S] - INFO - Processing order: {'order_id': '02383237-b94f-4570-9c14-f0445560ccfe', 'customer_id': '42917e9d-54e6-4114-9322-ba41f7beca3e', 'product': 'Smartphone', 'quantity': 2, 'order_date': '2025-03-01T16:49:57.440713', 'total_amount': 1664.29}
+2025-03-03 19:49:57,524 - order-processor [S] - INFO - Order: 02383237-b94f-4570-9c14-f0445560ccfe: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:49:57,526 - order-processor [S] - INFO - Order: 02383237-b94f-4570-9c14-f0445560ccfe: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:49:57,527 - watchdog-service [S] - INFO - New file detected: ./orders/order_3ba7d6b6-352b-46c9-8705-5236acc1f4ef.json
+2025-03-03 19:49:57,529 - order-processor [S] - INFO - Removed file ./orders order_02383237-b94f-4570-9c14-f0445560ccfe.json
+2025-03-03 19:49:57,534 - notification-service [S] - INFO - Notification: Order 02383237-b94f-4570-9c14-f0445560ccfe is confirmed
+2025-03-03 19:49:57,549 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_3ba7d6b6-352b-46c9-8705-5236acc1f4ef.json
+2025-03-03 19:49:57,551 - order-processor [S] - INFO - Processing order: {'order_id': '3ba7d6b6-352b-46c9-8705-5236acc1f4ef', 'customer_id': 'b9d21e2c-aaf5-4d12-84b4-615dc82970e3', 'product': 'Tablet', 'quantity': 3, 'order_date': '2025-02-01T16:49:57.441772', 'total_amount': 694.14}
+2025-03-03 19:49:57,554 - watchdog-service [S] - INFO - New file detected: ./orders/order_6ca3e850-2b1a-4d06-b756-af7dae629436.json
+2025-03-03 19:49:57,554 - order-processor [S] - INFO - Order: 3ba7d6b6-352b-46c9-8705-5236acc1f4ef: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:49:57,558 - order-processor [S] - INFO - Order: 3ba7d6b6-352b-46c9-8705-5236acc1f4ef: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:49:57,560 - order-processor [S] - INFO - Removed file ./orders order_3ba7d6b6-352b-46c9-8705-5236acc1f4ef.json
+2025-03-03 19:49:57,562 - notification-service [S] - INFO - Notification: Order 3ba7d6b6-352b-46c9-8705-5236acc1f4ef is confirmed
+2025-03-03 19:49:57,579 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_6ca3e850-2b1a-4d06-b756-af7dae629436.json
+2025-03-03 19:49:57,580 - order-processor [S] - INFO - Processing order: {'order_id': '6ca3e850-2b1a-4d06-b756-af7dae629436', 'customer_id': 'fc19a438-e7d2-4abd-a4ff-8a0ee925abab', 'product': 'Smartphone', 'quantity': 3, 'order_date': '2025-02-15T16:49:57.442024', 'total_amount': 1016.8}
+2025-03-03 19:49:57,583 - order-processor [S] - INFO - Order: 6ca3e850-2b1a-4d06-b756-af7dae629436: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:49:57,584 - order-processor [S] - INFO - Order: 6ca3e850-2b1a-4d06-b756-af7dae629436: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:49:57,588 - order-processor [S] - INFO - Removed file ./orders order_6ca3e850-2b1a-4d06-b756-af7dae629436.json
+2025-03-03 19:49:57,590 - notification-service [S] - INFO - Notification: Order 6ca3e850-2b1a-4d06-b756-af7dae629436 is confirmed
+2025-03-03 19:49:57,591 - watchdog-service [S] - INFO - New file detected: ./orders/order_89c48620-85d2-42e0-bfaf-216b2ecfd61b.json
+2025-03-03 19:49:57,609 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_89c48620-85d2-42e0-bfaf-216b2ecfd61b.json
+2025-03-03 19:49:57,611 - order-processor [S] - INFO - Processing order: {'order_id': '89c48620-85d2-42e0-bfaf-216b2ecfd61b', 'customer_id': 'e246bfb9-6f3c-42a4-8317-66c698fa85ab', 'product': None, 'quantity': 4, 'order_date': '2025-02-09T16:49:57.442280', 'total_amount': 1981.32}
+2025-03-03 19:49:57,613 - order-processor [S] - ERROR - Validation: Order: 89c48620-85d2-42e0-bfaf-216b2ecfd61b: Product is required - Sent to the fails queue
+2025-03-03 19:50:00,133 - watchdog-service [S] - INFO - New file detected: ./orders/order_9776f607-c64d-478b-89c7-17ff539195c6.json
+2025-03-03 19:50:00,184 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_9776f607-c64d-478b-89c7-17ff539195c6.json
+2025-03-03 19:50:00,187 - order-processor [S] - INFO - Processing order: {'order_id': '9776f607-c64d-478b-89c7-17ff539195c6', 'customer_id': '4f6427bb-f1ae-4a0b-8e95-993b78147f04', 'product': None, 'quantity': 1, 'order_date': '2025-02-28T16:50:00.131494', 'total_amount': 1089.23}
+2025-03-03 19:50:00,190 - order-processor [S] - ERROR - Validation: Order: 9776f607-c64d-478b-89c7-17ff539195c6: Product is required - Sent to the fails queue
+2025-03-03 19:50:00,207 - watchdog-service [S] - INFO - New file detected: ./orders/order_321c6306-46ac-4a05-b4d3-22731f186887.json
+2025-03-03 19:50:00,240 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_321c6306-46ac-4a05-b4d3-22731f186887.json
+2025-03-03 19:50:00,242 - order-processor [S] - INFO - Processing order: {'order_id': '321c6306-46ac-4a05-b4d3-22731f186887', 'customer_id': '93bc7d4b-6fc0-428c-8eb2-d231df6eb0c6', 'product': 'Headphones', 'quantity': 3, 'order_date': '2025-02-13T16:50:00.131986', 'total_amount': 1005.3}
+2025-03-03 19:50:00,251 - order-processor [S] - INFO - Order: 321c6306-46ac-4a05-b4d3-22731f186887: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:50:00,254 - watchdog-service [S] - INFO - New file detected: ./orders/order_fccc96d4-dbd2-47a3-a0d0-e832bfeb60ba.json
+2025-03-03 19:50:00,256 - order-processor [S] - INFO - Order: 321c6306-46ac-4a05-b4d3-22731f186887: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:50:00,256 - order-processor [S] - INFO - Removed file ./orders order_321c6306-46ac-4a05-b4d3-22731f186887.json
+2025-03-03 19:50:00,260 - notification-service [S] - INFO - Notification: Order 321c6306-46ac-4a05-b4d3-22731f186887 is confirmed
+2025-03-03 19:50:00,277 - order-processor [S] - INFO - Processing order: {'order_id': 'fccc96d4-dbd2-47a3-a0d0-e832bfeb60ba', 'customer_id': 'df4ab433-7f62-45a0-a9c5-a017808a36cd', 'product': 'Tablet', 'quantity': 3, 'order_date': '2025-02-01T16:50:00.132483', 'total_amount': 1464.63}
+2025-03-03 19:50:00,277 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_fccc96d4-dbd2-47a3-a0d0-e832bfeb60ba.json
+2025-03-03 19:50:00,281 - order-processor [S] - INFO - Order: fccc96d4-dbd2-47a3-a0d0-e832bfeb60ba: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:50:00,284 - order-processor [S] - INFO - Order: fccc96d4-dbd2-47a3-a0d0-e832bfeb60ba: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:50:00,289 - order-processor [S] - INFO - Removed file ./orders order_fccc96d4-dbd2-47a3-a0d0-e832bfeb60ba.json
+2025-03-03 19:50:00,292 - watchdog-service [S] - INFO - New file detected: ./orders/order_97703bef-1415-4580-9bca-e77e9e094289.json
+2025-03-03 19:50:00,294 - notification-service [S] - INFO - Notification: Order fccc96d4-dbd2-47a3-a0d0-e832bfeb60ba is confirmed
+2025-03-03 19:50:00,314 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_97703bef-1415-4580-9bca-e77e9e094289.json
+2025-03-03 19:50:00,318 - order-processor [S] - INFO - Processing order: {'order_id': '97703bef-1415-4580-9bca-e77e9e094289', 'customer_id': '08355fd4-38aa-482c-b954-b36f61eef0ad', 'product': 'Headphones', 'quantity': 1, 'order_date': '2025-03-01T16:50:00.136503', 'total_amount': 254.09}
+2025-03-03 19:50:00,333 - watchdog-service [S] - INFO - New file detected: ./orders/order_833a772c-e377-4547-bdf2-cf6cebad9260.json
+2025-03-03 19:50:00,330 - order-processor [S] - INFO - Order: 97703bef-1415-4580-9bca-e77e9e094289: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:50:00,336 - order-processor [S] - INFO - Order: 97703bef-1415-4580-9bca-e77e9e094289: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:50:00,355 - order-processor [S] - INFO - Removed file ./orders order_97703bef-1415-4580-9bca-e77e9e094289.json
+2025-03-03 19:50:00,358 - notification-service [S] - INFO - Notification: Order 97703bef-1415-4580-9bca-e77e9e094289 is confirmed
+2025-03-03 19:50:00,398 - order-processor [S] - INFO - Processing order: {'order_id': '833a772c-e377-4547-bdf2-cf6cebad9260', 'customer_id': 'f46b9705-312c-411d-9d3e-7684215f63a7', 'product': 'Laptop', 'quantity': 1, 'order_date': '2025-02-12T16:50:00.137955', 'total_amount': 721.68}
+2025-03-03 19:50:00,404 - order-processor [S] - INFO - Order: 833a772c-e377-4547-bdf2-cf6cebad9260: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:50:00,401 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_833a772c-e377-4547-bdf2-cf6cebad9260.json
+2025-03-03 19:50:00,413 - notification-service [S] - INFO - Notification: Order 833a772c-e377-4547-bdf2-cf6cebad9260 is confirmed
+2025-03-03 19:50:00,414 - order-processor [S] - INFO - Order: 833a772c-e377-4547-bdf2-cf6cebad9260: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:50:00,417 - order-processor [S] - INFO - Removed file ./orders order_833a772c-e377-4547-bdf2-cf6cebad9260.json
+2025-03-03 19:50:00,427 - watchdog-service [S] - INFO - New file detected: ./orders/order_4c1bd43e-1a46-4f53-adc5-dfd56c81a7c6.json
+2025-03-03 19:50:00,480 - order-processor [S] - INFO - Processing order: {'order_id': '4c1bd43e-1a46-4f53-adc5-dfd56c81a7c6', 'customer_id': '2f49face-4854-4539-98b1-340f43f11ffc', 'product': 'Laptop', 'quantity': 5, 'order_date': '2025-02-28T16:50:00.138254', 'total_amount': 641.85}
+2025-03-03 19:50:00,481 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_4c1bd43e-1a46-4f53-adc5-dfd56c81a7c6.json
+2025-03-03 19:50:00,501 - order-processor [S] - INFO - Order: 4c1bd43e-1a46-4f53-adc5-dfd56c81a7c6: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:50:00,503 - order-processor [S] - INFO - Order: 4c1bd43e-1a46-4f53-adc5-dfd56c81a7c6: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:50:00,506 - order-processor [S] - INFO - Removed file ./orders order_4c1bd43e-1a46-4f53-adc5-dfd56c81a7c6.json
+2025-03-03 19:50:00,508 - notification-service [S] - INFO - Notification: Order 4c1bd43e-1a46-4f53-adc5-dfd56c81a7c6 is confirmed
+2025-03-03 19:50:02,475 - watchdog-service [S] - INFO - New file detected: ./orders/order_6f0dc758-3b98-4c4e-960c-fb79364baa02.json
+2025-03-03 19:50:02,501 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_6f0dc758-3b98-4c4e-960c-fb79364baa02.json
+2025-03-03 19:50:02,503 - order-processor [S] - INFO - Processing order: {'order_id': '6f0dc758-3b98-4c4e-960c-fb79364baa02', 'customer_id': 'd08f8873-522c-437d-8c41-7febb93dce48', 'product': 'Laptop', 'quantity': 5, 'order_date': '2025-02-13T16:50:02.473970', 'total_amount': 784.74}
+2025-03-03 19:50:02,507 - order-processor [S] - INFO - Order: 6f0dc758-3b98-4c4e-960c-fb79364baa02: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:50:02,511 - order-processor [S] - INFO - Order: 6f0dc758-3b98-4c4e-960c-fb79364baa02: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:50:02,513 - watchdog-service [S] - INFO - New file detected: ./orders/order_0ecb8c39-0cdb-43a5-b9c3-e64dcb6a2244.json
+2025-03-03 19:50:02,515 - order-processor [S] - INFO - Removed file ./orders order_6f0dc758-3b98-4c4e-960c-fb79364baa02.json
+2025-03-03 19:50:02,519 - notification-service [S] - INFO - Notification: Order 6f0dc758-3b98-4c4e-960c-fb79364baa02 is confirmed
+2025-03-03 19:50:02,552 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_0ecb8c39-0cdb-43a5-b9c3-e64dcb6a2244.json
+2025-03-03 19:50:02,559 - order-processor [S] - INFO - Processing order: {'order_id': '0ecb8c39-0cdb-43a5-b9c3-e64dcb6a2244', 'customer_id': '8c07c24d-fb60-433f-939d-27802c28e148', 'product': 'Headphones', 'quantity': 3, 'order_date': '2025-02-10T16:50:02.474525', 'total_amount': 1725.18}
+2025-03-03 19:50:02,563 - order-processor [S] - INFO - Order: 0ecb8c39-0cdb-43a5-b9c3-e64dcb6a2244: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:50:02,567 - order-processor [S] - INFO - Order: 0ecb8c39-0cdb-43a5-b9c3-e64dcb6a2244: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:50:02,569 - notification-service [S] - INFO - Notification: Order 0ecb8c39-0cdb-43a5-b9c3-e64dcb6a2244 is confirmed
+2025-03-03 19:50:02,570 - order-processor [S] - INFO - Removed file ./orders order_0ecb8c39-0cdb-43a5-b9c3-e64dcb6a2244.json
+2025-03-03 19:50:02,575 - watchdog-service [S] - INFO - New file detected: ./orders/order_cdd6889f-4b1c-4a7a-b667-f40aa8ddd6a1.json
+2025-03-03 19:50:02,608 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_cdd6889f-4b1c-4a7a-b667-f40aa8ddd6a1.json
+2025-03-03 19:50:02,613 - order-processor [S] - INFO - Processing order: {'order_id': 'cdd6889f-4b1c-4a7a-b667-f40aa8ddd6a1', 'customer_id': 'cff9f1f8-5354-4f1f-b99d-194653dd2e11', 'product': 'Smartphone', 'quantity': 2, 'order_date': '2025-02-11T16:50:02.478812', 'total_amount': 1586.67}
+2025-03-03 19:50:02,620 - order-processor [S] - INFO - Order: cdd6889f-4b1c-4a7a-b667-f40aa8ddd6a1: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:50:02,623 - order-processor [S] - INFO - Order: cdd6889f-4b1c-4a7a-b667-f40aa8ddd6a1: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:50:02,625 - order-processor [S] - INFO - Removed file ./orders order_cdd6889f-4b1c-4a7a-b667-f40aa8ddd6a1.json
+2025-03-03 19:50:02,627 - notification-service [S] - INFO - Notification: Order cdd6889f-4b1c-4a7a-b667-f40aa8ddd6a1 is confirmed
+2025-03-03 19:50:04,178 - watchdog-service [S] - INFO - New file detected: ./orders/order_5035c416-b7cb-484f-acbd-f5df38085b88.json
+2025-03-03 19:50:04,196 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_5035c416-b7cb-484f-acbd-f5df38085b88.json
+2025-03-03 19:50:04,202 - order-processor [S] - INFO - Processing order: {'order_id': '5035c416-b7cb-484f-acbd-f5df38085b88', 'customer_id': 'fd89ede8-cc3c-4c95-8b30-fe2174cc6d96', 'product': 'Smartphone', 'quantity': 5, 'order_date': '2025-02-10T16:50:04.176881', 'total_amount': 401.11}
+2025-03-03 19:50:04,209 - order-processor [S] - INFO - Order: 5035c416-b7cb-484f-acbd-f5df38085b88: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:50:04,212 - order-processor [S] - INFO - Order: 5035c416-b7cb-484f-acbd-f5df38085b88: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:50:04,216 - notification-service [S] - INFO - Notification: Order 5035c416-b7cb-484f-acbd-f5df38085b88 is confirmed
+2025-03-03 19:50:04,214 - order-processor [S] - INFO - Removed file ./orders order_5035c416-b7cb-484f-acbd-f5df38085b88.json
+2025-03-03 19:50:07,627 - watchdog-service [S] - INFO - New file detected: ./orders/order_f25339d1-2ad2-417a-a33b-cd700e900a92.json
+2025-03-03 19:50:07,639 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_f25339d1-2ad2-417a-a33b-cd700e900a92.json
+2025-03-03 19:50:07,640 - order-processor [S] - INFO - Processing order: {'order_id': 'f25339d1-2ad2-417a-a33b-cd700e900a92', 'customer_id': 'db24baed-7ee8-4693-846a-ff7e00c7f549', 'product': 'Laptop', 'quantity': 3, 'order_date': '2025-03-02T16:50:07.625924', 'total_amount': 1672.81}
+2025-03-03 19:50:07,643 - order-processor [S] - INFO - Order: f25339d1-2ad2-417a-a33b-cd700e900a92: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:50:07,644 - order-processor [S] - INFO - Order: f25339d1-2ad2-417a-a33b-cd700e900a92: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:50:07,649 - notification-service [S] - INFO - Notification: Order f25339d1-2ad2-417a-a33b-cd700e900a92 is confirmed
+2025-03-03 19:50:07,649 - order-processor [S] - INFO - Removed file ./orders order_f25339d1-2ad2-417a-a33b-cd700e900a92.json
+2025-03-03 19:50:07,651 - watchdog-service [S] - INFO - New file detected: ./orders/order_bb926c65-8570-4254-9a97-a6f9ee2c049e.json
+2025-03-03 19:50:07,663 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_bb926c65-8570-4254-9a97-a6f9ee2c049e.json
+2025-03-03 19:50:07,663 - order-processor [S] - INFO - Processing order: {'order_id': 'bb926c65-8570-4254-9a97-a6f9ee2c049e', 'customer_id': '62d40f9c-8803-4257-87b6-23add0692488', 'product': 'Smartphone', 'quantity': 2, 'order_date': '2025-02-19T16:50:07.626213', 'total_amount': 52.55}
+2025-03-03 19:50:07,668 - order-processor [S] - INFO - Order: bb926c65-8570-4254-9a97-a6f9ee2c049e: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:50:07,670 - order-processor [S] - INFO - Order: bb926c65-8570-4254-9a97-a6f9ee2c049e: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:50:07,672 - order-processor [S] - INFO - Removed file ./orders order_bb926c65-8570-4254-9a97-a6f9ee2c049e.json
+2025-03-03 19:50:07,673 - notification-service [S] - INFO - Notification: Order bb926c65-8570-4254-9a97-a6f9ee2c049e is confirmed
+2025-03-03 19:50:08,844 - watchdog-service [S] - INFO - New file detected: ./orders/order_b76bc085-e8a9-45d8-9376-45b6ea4f745b.json
+2025-03-03 19:50:08,859 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_b76bc085-e8a9-45d8-9376-45b6ea4f745b.json
+2025-03-03 19:50:08,861 - order-processor [S] - INFO - Processing order: {'order_id': 'b76bc085-e8a9-45d8-9376-45b6ea4f745b', 'customer_id': '1df9a875-1c8f-4ffb-b8cb-b38b69d0c281', 'product': 'Laptop', 'quantity': 1, 'order_date': '2025-02-22T16:50:08.841217', 'total_amount': 1853.72}
+2025-03-03 19:50:08,864 - order-processor [S] - INFO - Order: b76bc085-e8a9-45d8-9376-45b6ea4f745b: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:50:08,866 - watchdog-service [S] - INFO - New file detected: ./orders/order_8c50080f-8356-4944-920d-ea779c31970c.json
+2025-03-03 19:50:08,869 - order-processor [S] - INFO - Order: b76bc085-e8a9-45d8-9376-45b6ea4f745b: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:50:08,870 - order-processor [S] - INFO - Removed file ./orders order_b76bc085-e8a9-45d8-9376-45b6ea4f745b.json
+2025-03-03 19:50:08,874 - notification-service [S] - INFO - Notification: Order b76bc085-e8a9-45d8-9376-45b6ea4f745b is confirmed
+2025-03-03 19:50:08,889 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_8c50080f-8356-4944-920d-ea779c31970c.json
+2025-03-03 19:50:08,890 - order-processor [S] - INFO - Processing order: {'order_id': '8c50080f-8356-4944-920d-ea779c31970c', 'customer_id': 'afa2dfc0-c8a1-43ff-9f2a-bd1ad140b305', 'product': 'Laptop', 'quantity': 5, 'order_date': '2025-02-27T16:50:08.841560', 'total_amount': 858.64}
+2025-03-03 19:50:08,894 - order-processor [S] - INFO - Order: 8c50080f-8356-4944-920d-ea779c31970c: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:50:08,898 - order-processor [S] - INFO - Order: 8c50080f-8356-4944-920d-ea779c31970c: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:50:08,898 - order-processor [S] - INFO - Removed file ./orders order_8c50080f-8356-4944-920d-ea779c31970c.json
+2025-03-03 19:50:08,899 - watchdog-service [S] - INFO - New file detected: ./orders/order_e0c6c4f2-3a34-47ac-903b-8a64b41cd385.json
+2025-03-03 19:50:08,904 - notification-service [S] - INFO - Notification: Order 8c50080f-8356-4944-920d-ea779c31970c is confirmed
+2025-03-03 19:50:08,928 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_e0c6c4f2-3a34-47ac-903b-8a64b41cd385.json
+2025-03-03 19:50:08,930 - order-processor [S] - INFO - Processing order: {'order_id': 'e0c6c4f2-3a34-47ac-903b-8a64b41cd385', 'customer_id': 'dad6f5f3-2b26-43df-b15b-5eec6720228c', 'product': None, 'quantity': 4, 'order_date': '2025-02-10T16:50:08.841739', 'total_amount': 430.12}
+2025-03-03 19:50:08,936 - order-processor [S] - ERROR - Validation: Order: e0c6c4f2-3a34-47ac-903b-8a64b41cd385: Product is required - Sent to the fails queue
+2025-03-03 19:50:08,944 - watchdog-service [S] - INFO - New file detected: ./orders/order_cb5564c9-c4c7-4df7-a03c-5692a2e7d162.json
+2025-03-03 19:50:08,961 - order-processor [S] - INFO - Processing order: {'order_id': 'cb5564c9-c4c7-4df7-a03c-5692a2e7d162', 'customer_id': '7647921c-65ad-4fb3-bb15-ffa5118e5c3a', 'product': 'Keyboard', 'quantity': 3, 'order_date': '2025-02-04T16:50:08.841898', 'total_amount': 576.62}
+2025-03-03 19:50:08,961 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_cb5564c9-c4c7-4df7-a03c-5692a2e7d162.json
+2025-03-03 19:50:08,964 - order-processor [S] - INFO - Order: cb5564c9-c4c7-4df7-a03c-5692a2e7d162: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:50:08,967 - watchdog-service [S] - INFO - New file detected: ./orders/order_57e9b8a7-6584-4da2-af61-1e360ad06459.json
+2025-03-03 19:50:08,968 - order-processor [S] - INFO - Order: cb5564c9-c4c7-4df7-a03c-5692a2e7d162: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:50:08,968 - order-processor [S] - INFO - Removed file ./orders order_cb5564c9-c4c7-4df7-a03c-5692a2e7d162.json
+2025-03-03 19:50:08,970 - notification-service [S] - INFO - Notification: Order cb5564c9-c4c7-4df7-a03c-5692a2e7d162 is confirmed
+2025-03-03 19:50:08,994 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_57e9b8a7-6584-4da2-af61-1e360ad06459.json
+2025-03-03 19:50:08,997 - order-processor [S] - INFO - Processing order: {'order_id': '57e9b8a7-6584-4da2-af61-1e360ad06459', 'customer_id': '52ea5731-5625-4bd3-9329-6ed2a082fd3f', 'product': 'Laptop', 'quantity': 1, 'order_date': '2025-02-24T16:50:08.842049', 'total_amount': 260.37}
+2025-03-03 19:50:09,007 - watchdog-service [S] - INFO - New file detected: ./orders/order_eea49bf4-20f4-414f-b703-e27871be639a.json
+2025-03-03 19:50:09,008 - order-processor [S] - INFO - Order: 57e9b8a7-6584-4da2-af61-1e360ad06459: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:50:09,012 - order-processor [S] - INFO - Order: 57e9b8a7-6584-4da2-af61-1e360ad06459: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:50:09,013 - notification-service [S] - INFO - Notification: Order 57e9b8a7-6584-4da2-af61-1e360ad06459 is confirmed
+2025-03-03 19:50:09,017 - order-processor [S] - INFO - Removed file ./orders order_57e9b8a7-6584-4da2-af61-1e360ad06459.json
+2025-03-03 19:50:09,037 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_eea49bf4-20f4-414f-b703-e27871be639a.json
+2025-03-03 19:50:09,039 - order-processor [S] - INFO - Processing order: {'order_id': 'eea49bf4-20f4-414f-b703-e27871be639a', 'customer_id': 'ba8033b3-cd20-4079-b023-3da91d41a338', 'product': 'Keyboard', 'quantity': 3, 'order_date': '2025-02-28T16:50:08.842235', 'total_amount': 296.8}
+2025-03-03 19:50:09,050 - order-processor [S] - INFO - Order: eea49bf4-20f4-414f-b703-e27871be639a: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:50:09,052 - order-processor [S] - INFO - Order: eea49bf4-20f4-414f-b703-e27871be639a: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:50:09,053 - order-processor [S] - INFO - Removed file ./orders order_eea49bf4-20f4-414f-b703-e27871be639a.json
+2025-03-03 19:50:09,055 - notification-service [S] - INFO - Notification: Order eea49bf4-20f4-414f-b703-e27871be639a is confirmed
+2025-03-03 19:50:10,395 - watchdog-service [S] - INFO - New file detected: ./orders/order_76c19fd2-5ce0-44a4-b60a-5062f7389b7d.json
+2025-03-03 19:50:10,406 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_76c19fd2-5ce0-44a4-b60a-5062f7389b7d.json
+2025-03-03 19:50:10,409 - order-processor [S] - INFO - Processing order: {'order_id': '76c19fd2-5ce0-44a4-b60a-5062f7389b7d', 'customer_id': '5ced66ff-5182-438f-81bf-8e0529fefd68', 'product': 'Smartphone', 'quantity': 2, 'order_date': '2025-02-12T16:50:10.392196', 'total_amount': 1306.71}
+2025-03-03 19:50:10,414 - order-processor [S] - INFO - Order: 76c19fd2-5ce0-44a4-b60a-5062f7389b7d: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:50:10,417 - watchdog-service [S] - INFO - New file detected: ./orders/order_3a1a672b-c48b-4975-8da0-f4c674c713a0.json
+2025-03-03 19:50:10,418 - order-processor [S] - INFO - Order: 76c19fd2-5ce0-44a4-b60a-5062f7389b7d: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:50:10,420 - order-processor [S] - INFO - Removed file ./orders order_76c19fd2-5ce0-44a4-b60a-5062f7389b7d.json
+2025-03-03 19:50:10,421 - notification-service [S] - INFO - Notification: Order 76c19fd2-5ce0-44a4-b60a-5062f7389b7d is confirmed
+2025-03-03 19:50:10,442 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_3a1a672b-c48b-4975-8da0-f4c674c713a0.json
+2025-03-03 19:50:10,443 - order-processor [S] - INFO - Processing order: {'order_id': '3a1a672b-c48b-4975-8da0-f4c674c713a0', 'customer_id': 'f8f5dd68-4af2-45b9-845a-434da18945ef', 'product': None, 'quantity': 3, 'order_date': '2025-03-01T16:50:10.392613', 'total_amount': 828.49}
+2025-03-03 19:50:10,446 - order-processor [S] - ERROR - Validation: Order: 3a1a672b-c48b-4975-8da0-f4c674c713a0: Product is required - Sent to the fails queue
+2025-03-03 19:50:10,451 - watchdog-service [S] - INFO - New file detected: ./orders/order_3b7013c6-27da-4b35-a689-85e1411ddcff.json
+2025-03-03 19:50:10,468 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_3b7013c6-27da-4b35-a689-85e1411ddcff.json
+2025-03-03 19:50:10,470 - order-processor [S] - INFO - Processing order: {'order_id': '3b7013c6-27da-4b35-a689-85e1411ddcff', 'customer_id': 'e5323543-8513-4a99-a611-bdb54b7fe098', 'product': 'Keyboard', 'quantity': 2, 'order_date': '2025-03-02T16:50:10.392892', 'total_amount': 1851.28}
+2025-03-03 19:50:10,475 - order-processor [S] - INFO - Order: 3b7013c6-27da-4b35-a689-85e1411ddcff: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:50:10,477 - order-processor [S] - INFO - Order: 3b7013c6-27da-4b35-a689-85e1411ddcff: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:50:10,479 - watchdog-service [S] - INFO - New file detected: ./orders/order_e1ade47a-92d1-4f83-bc72-de72907bb9d5.json
+2025-03-03 19:50:10,481 - order-processor [S] - INFO - Removed file ./orders order_3b7013c6-27da-4b35-a689-85e1411ddcff.json
+2025-03-03 19:50:10,484 - notification-service [S] - INFO - Notification: Order 3b7013c6-27da-4b35-a689-85e1411ddcff is confirmed
+2025-03-03 19:50:10,500 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_e1ade47a-92d1-4f83-bc72-de72907bb9d5.json
+2025-03-03 19:50:10,502 - order-processor [S] - INFO - Processing order: {'order_id': 'e1ade47a-92d1-4f83-bc72-de72907bb9d5', 'customer_id': '66609b46-bee2-496b-a009-f69cdc991eee', 'product': 'Tablet', 'quantity': 4, 'order_date': '2025-02-25T16:50:10.393139', 'total_amount': 180.55}
+2025-03-03 19:50:10,505 - order-processor [S] - INFO - Order: e1ade47a-92d1-4f83-bc72-de72907bb9d5: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:50:10,507 - order-processor [S] - INFO - Order: e1ade47a-92d1-4f83-bc72-de72907bb9d5: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:50:10,511 - order-processor [S] - INFO - Removed file ./orders order_e1ade47a-92d1-4f83-bc72-de72907bb9d5.json
+2025-03-03 19:50:10,512 - notification-service [S] - INFO - Notification: Order e1ade47a-92d1-4f83-bc72-de72907bb9d5 is confirmed
+2025-03-03 19:50:12,176 - watchdog-service [S] - INFO - New file detected: ./orders/order_8f9056fb-6b20-4e73-b591-0aaebf0ec754.json
+2025-03-03 19:50:12,192 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_8f9056fb-6b20-4e73-b591-0aaebf0ec754.json
+2025-03-03 19:50:12,193 - order-processor [S] - INFO - Processing order: {'order_id': '8f9056fb-6b20-4e73-b591-0aaebf0ec754', 'customer_id': '41411c8c-cba6-45ca-a205-957f0806c67a', 'product': 'Laptop', 'quantity': 1, 'order_date': '2025-02-28T16:50:12.173258', 'total_amount': 1683.21}
+2025-03-03 19:50:12,197 - order-processor [S] - INFO - Order: 8f9056fb-6b20-4e73-b591-0aaebf0ec754: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:50:12,199 - watchdog-service [S] - INFO - New file detected: ./orders/order_77283212-f155-47c9-a205-9689377ba146.json
+2025-03-03 19:50:12,201 - order-processor [S] - INFO - Order: 8f9056fb-6b20-4e73-b591-0aaebf0ec754: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:50:12,202 - order-processor [S] - INFO - Removed file ./orders order_8f9056fb-6b20-4e73-b591-0aaebf0ec754.json
+2025-03-03 19:50:12,205 - notification-service [S] - INFO - Notification: Order 8f9056fb-6b20-4e73-b591-0aaebf0ec754 is confirmed
+2025-03-03 19:50:12,218 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_77283212-f155-47c9-a205-9689377ba146.json
+2025-03-03 19:50:12,220 - order-processor [S] - INFO - Processing order: {'order_id': '77283212-f155-47c9-a205-9689377ba146', 'customer_id': '6b1397b9-c557-4881-91fa-fe62941f1d17', 'product': 'Keyboard', 'quantity': 2, 'order_date': '2025-02-09T16:50:12.173739', 'total_amount': 1483.33}
+2025-03-03 19:50:12,224 - order-processor [S] - INFO - Order: 77283212-f155-47c9-a205-9689377ba146: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:50:12,227 - order-processor [S] - INFO - Order: 77283212-f155-47c9-a205-9689377ba146: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:50:12,228 - order-processor [S] - INFO - Removed file ./orders order_77283212-f155-47c9-a205-9689377ba146.json
+2025-03-03 19:50:12,229 - notification-service [S] - INFO - Notification: Order 77283212-f155-47c9-a205-9689377ba146 is confirmed
+2025-03-03 19:50:12,232 - watchdog-service [S] - INFO - New file detected: ./orders/order_976181aa-a548-445a-b333-e06b560be464.json
+2025-03-03 19:50:12,247 - watchdog-service [S] - INFO - JSON file content sent to RabbitMQ: ./orders/order_976181aa-a548-445a-b333-e06b560be464.json
+2025-03-03 19:50:12,250 - order-processor [S] - INFO - Processing order: {'order_id': '976181aa-a548-445a-b333-e06b560be464', 'customer_id': '3c637a84-a6b4-48a9-b061-4e2751fad6d7', 'product': 'Smartphone', 'quantity': 3, 'order_date': '2025-03-02T16:50:12.174057', 'total_amount': 438.49}
+2025-03-03 19:50:12,257 - order-processor [S] - INFO - Order: 976181aa-a548-445a-b333-e06b560be464: SUCCESSFULLY stored in MongoDB
+2025-03-03 19:50:12,261 - order-processor [S] - INFO - Order: 976181aa-a548-445a-b333-e06b560be464: SUCCESSFULLY sent to the confirmations queue
+2025-03-03 19:50:12,263 - order-processor [S] - INFO - Removed file ./orders order_976181aa-a548-445a-b333-e06b560be464.json
+2025-03-03 19:50:12,264 - notification-service [S] - INFO - Notification: Order 976181aa-a548-445a-b333-e06b560be464 is confirmed

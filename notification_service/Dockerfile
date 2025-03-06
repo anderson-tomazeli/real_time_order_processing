@@ -1,6 +1,6 @@
 FROM python:3.9-slim-buster
 
-RUN apt-get update && apt-get install -y iputils-ping
+# RUN apt-get update && apt-get install -y iputils-ping
 
 # Create a new user and group
 RUN useradd -ms /bin/bash anderson_tomazeli
