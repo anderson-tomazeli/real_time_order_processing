@@ -1,6 +1,5 @@
 services:
   rabbitmq:
-    #image: rabbitmq:3.9-management
     build: ./rabbitmq
     container_name: rabbitmq
     ports:
@@ -16,7 +15,6 @@ services:
       retries: 5           # How many retries before considering unhealthy
       start_period: 60s    # How long to wait before starting health checks (give RabbitMQ time to start)
     volumes:
-      #- ./rabbitmq_init.sh:/etc/rabbitmq/rabbitmq_init.sh # Mount the script
       - rabbitmq_data:/var/lib/rabbitmq
     # Run script before rabbitmq server starts
     #command: ["/bin/bash", "/etc/rabbitmq/rabbitmq_init.sh", "&", "rabbitmq-server"] 
@@ -28,19 +26,19 @@ services:
     container_name: mongodb
     ports:
       - "27017:27017"
+    environment:
+      GLIBC_TUNABLES: glibc.pthread.rseq=0
     healthcheck:
       test: ["CMD-SHELL", "mongosh --eval 'db.adminCommand(\"ping\")'"] # Check if MongoDB is responding
       interval: 30s        # How often to check
       timeout: 10s         # How long to wait for a response
       retries: 5           # How many retries before considering unhealthy
       start_period: 60s    # How long to wait before starting health checks (give MongoDB time to start)
+    volumes:
+      - mongodb_data:/data/db
     networks:
       - my-network
 
-  # order-processor and notification-service have the volume ./order-processor:/app 
-  # which allow to develop and modify the Python code without 
-  # having to rebuild the Docker images every time. 
-  # Changes made to app.py on host machine are immediately reflected inside the container
   order-processor:
     build:
       context: .
@@ -51,6 +49,7 @@ services:
       MONGO_PORT: 27017
       MONGO_DB_NAME: order_db
       MONGO_COLLECTION_NAME: orders
+      SERVICE_NAME: ${ORDER_PROCESSOR}
     depends_on:
       rabbitmq:
         condition: service_healthy # Wait for rabbitmq service to become healthy
@@ -59,14 +58,16 @@ services:
     networks:
       - my-network
     volumes:
-      #- ./logs/app.log:/app # Mount the logs file into the container
       - ./logs:/app/logs
+      - ./orders:/app/orders
 
   notification-service:
     build:
       context: .
       dockerfile: ./notification_service/Dockerfile
     container_name: notification-service
+    environment:
+      SERVICE_NAME: ${NOTIFICATION_SERVICE}
     depends_on:
       rabbitmq:
         condition: service_healthy # Wait for rabbitmq service to become healthy
@@ -74,10 +75,25 @@ services:
       - my-network
     volumes:
       - ./logs:/app/logs
-      #- ./logs/app.log:/app # Mount the logs file into the container
 
+  watchdog-service:
+    build:
+      context: .
+      dockerfile: ./watchdog/Dockerfile
+    container_name: watchdog-service
+    environment:
+      SERVICE_NAME: ${WATCHDOG_SERVICE}
+    depends_on:
+      rabbitmq:
+        condition: service_healthy # Wait for rabbitmq service to become healthy
+    networks:
+      - my-network
+    volumes:
+      - ./logs:/app/logs
+      - ./orders:/app/orders
 
 volumes:
+  mongodb_data: # As a named volume, should be informed here
   rabbitmq_data:
 
 networks:

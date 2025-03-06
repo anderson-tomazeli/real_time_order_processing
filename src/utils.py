@@ -1,25 +1,45 @@
 import logging
 import os
+import pika
 from configparser import ConfigParser
+
+def get_caller(script_name):
+    """Extract the calling script name"""
+    return os.path.splitext(os.path.basename(script_name))[0]
+
 
 def setup_logging(config):
     log_file = config.get('DEFAULT', 'log_file')
-    log_level = config.get('DEFAULT', 'log_level')
+    # Get the log level from the config
+    app_log_level_str = config.get('DEFAULT', 'app_log_level', fallback='INFO') #Added fallback, in case the key does not exist.
 
-    # Create the logs directory if it doesn't exist
-    log_dir = os.path.dirname(log_file)
-    if not os.path.exists(log_dir):
-        os.makedirs(log_dir)
+    # Convert the string log level to a logging level attribute
+    try:
+        app_log_level = getattr(logging, app_log_level_str.upper(), logging.INFO)
+    except AttributeError:
+        print(f"Invalid log level '{app_log_level_str}' in config. Using INFO.")
+        app_log_level = logging.INFO
 
-    logging.basicConfig(filename=log_file, level=log_level,
-                        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    logging.basicConfig(filename=log_file, level=app_log_level, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
-    return logging.getLogger(__name__)  # Return a logger instance
+    # Get the root logger for the pika package
+    pika_logger = logging.getLogger('pika')
+    rabbit_log_level_str = config.get('DEFAULT', 'rabbit_log_level', fallback='INFO') #Added fallback, in case the key does not exist.
 
-def load_config(config, section_name):
+    # Set the logging level to WARNING
+    pika_logger.setLevel(rabbit_log_level_str)
+
+def log_info(message, logger):
+    logger.info(message)
+
+def log_exception(message, logger):
+    logger.exception(message)
+
+def log_error(message, logger):
+    logger.error(message)
+
+def load_config(config, section_name, logger):
     """Loads configuration from the config object based on the parameter section_name"""
-    logger = setup_logging(config)
-
     key_config = {}  # Dictionary to store the configuration
 
     if config.has_section(section_name):              # Check if the section exists
@@ -27,8 +47,6 @@ def load_config(config, section_name):
             key_config[key] = value                   # Store each option in the dictionary
         logger.info(f"Loading configuration for {section_name}: success")
     else:
-        #raise ValueError("{section_name} section not found in config file.")
-        #logger.exception(f"{section_name} section not found in config file.")
         logger.info(f"Loading configuration for {section_name}: error")
 
     return key_config
@@ -53,4 +71,6 @@ def get_config():
 
     return config
 
-# Other utility functions can go here...
+def nvl(value, default_value):
+    """Returns default_value if value is None, otherwise returns value."""
+    return default_value if value is None else value
