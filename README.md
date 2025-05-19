@@ -1,7 +1,28 @@
-Naturally, after all the containers run with no errors, the main idea is to generate .json files in the "orders" folder with purchase order details by executing the generate_orders.py script in the root project path.
+🚀 How It Works
+Once all containers are up and running smoothly, the magic begins!
 
-While the script continuously generates random order .json files, the watchdog service is triggered by detecting new files in the orders folder, and it sends a message to the "orders" queue. The order_processor service detects it through a RabbitMQ listening process, catches the order's data, storing it in a MongoDB container. If successfully validated, it sends a message to the confirmations queue. If the validation fails, like an order in which the product was not supplied, the file is kept in the orders folder, the system will register a log with errors, and the payload with the failed .json content is sent to the "fails" queue.
+The core idea is to generate .json purchase orders inside the orders folder by running the generate_orders.py script located in the root of the project. This script continuously creates random order files to simulate real-world input.
 
-The "notification-service" container sends the confirmation message to the "confirmations" queue, finishing the process.
+Here’s a quick overview of what happens behind the scenes:
 
-The entire system events are logged to the ./logs/app.log file, making each step of the solution clear.
+📁 Order Generation
+New .json files with random order details are created in the orders folder.
+
+👀 Watchdog Detection
+A watchdog service monitors the folder for any new files. When it detects one, it sends a message to the orders queue via RabbitMQ.
+
+⚙️ Order Processing
+The order_processor service picks up the message from the orders queue, processes the order, and attempts to store it in the MongoDB container.
+
+✅ If the order is valid, it moves on and sends a message to the confirmations queue.
+
+❌ If there's an issue (e.g., an unavailable product), the .json file stays in the orders folder, an error is logged, and the problematic data is forwarded to the fails queue.
+
+✉️ Notifications
+The notification-service listens to the confirmations queue and handles the final step of the workflow.
+
+📝 Logs for Everything
+Every step is logged in ./logs/app.log, so you can always track what’s happening in the system.
+
+💡 A Note from the Developer
+This is one of my first hands-on projects in data engineering, designed to help me learn by doing. As a next step, I plan to refactor the codebase to follow Object-Oriented Design (OOD) principles—bringing more structure, reusability, and maintainability to the solution.
